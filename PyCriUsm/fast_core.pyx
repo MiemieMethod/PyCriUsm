@@ -204,9 +204,9 @@ cdef class FastUsmFile:
 				padding_size = _bswap_16(<uint16_t*>(header_array + 10))
 				pos += chunk_size + 8
 				data_type = (header_array[15]) & 3
-				with gil:
+				# with gil:
 				#	print(header_array[:sizeof(header_array)])
-					print("header信息：", chunk_size, data_offset[0], padding_size, pos, data_type)
+					# print("header信息：", chunk_size, data_offset[0], padding_size, pos, data_type)
 				if data_type != 0:
 					#with gil:
 					#	print('非流，跳过\n')
