@@ -116,7 +116,7 @@ def get_keys(update_for: str):
 			Warning(f'Could not find {i.VideoPath} key')
 			continue
 		names = i.VideoPath.removesuffix('.usm')
-		if i.is_player_involved:
+		if i.IsPlayerInvolved:
 			names = (names + '_f', names + '_m')
 		else:
 			names = (names,)
