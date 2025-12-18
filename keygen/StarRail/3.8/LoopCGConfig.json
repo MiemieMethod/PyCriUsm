@@ -1,0 +1,1807 @@
+[
+  {
+    "VideoID": 101,
+    "VideoPath": "CS_ChapLoop01_Act0010.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 102,
+    "VideoPath": "CS_ChapLoop01_Act0020.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 103,
+    "VideoPath": "CS_ChapLoop01_Act0030.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 104,
+    "VideoPath": "CS_ChapLoop_Black.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 108,
+    "VideoPath": "CS_ChapLoop01_Act0070.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 109,
+    "VideoPath": "CS_ChapLoop01_Act0080.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 110,
+    "VideoPath": "CS_ChapLoop01_Act0090.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 111,
+    "VideoPath": "CS_ChapLoop01_Act0100.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 112,
+    "VideoPath": "CS_ChapLoop01_Act0110.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 114,
+    "VideoPath": "CS_ChapLoop02_Act0010.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 117,
+    "VideoPath": "CS_ChapLoop02_Act0040.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 118,
+    "VideoPath": "CS_Chap02_Act3010.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 119,
+    "VideoPath": "CS_ChapLoop02_Act0050.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 120,
+    "VideoPath": "CS_ChapLoop02_Act0060.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 121,
+    "VideoPath": "CS_ChapLoop02_Act0070.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 122,
+    "VideoPath": "CS_ChapLoop02_Act0080.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 123,
+    "VideoPath": "CS_ChapLoop02_Act0090.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 124,
+    "VideoPath": "CS_ChapLoop02_Act0100.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 125,
+    "VideoPath": "CS_ChapLoop02_Act0110.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 126,
+    "VideoPath": "CS_ChapLoop02_Act0120.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 127,
+    "VideoPath": "CS_ChapLoop02_Act0130.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 128,
+    "VideoPath": "CS_ChapLoop02_Act0150.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 129,
+    "VideoPath": "CS_Chap02_Act3020_Loop.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 130,
+    "VideoPath": "CS_Chap01_Act3040_Loop.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 131,
+    "VideoPath": "CS_ChapLoop01_Act0120.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 132,
+    "VideoPath": "CS_ChapLoop02_Act0160.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 133,
+    "VideoPath": "CS_ChapLoop02_Act0170.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 134,
+    "VideoPath": "CS_ChapLoop02_Act0180.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 135,
+    "VideoPath": "CS_ChapLoop02_Act0190.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 136,
+    "VideoPath": "CS_ChapLoop02_Act0200.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 162,
+    "VideoPath": "CS_ChapLoop01_Act0130.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 163,
+    "VideoPath": "CS_ChapLoop01_Act0140.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 164,
+    "VideoPath": "CS_ChapLoop01_Act0150.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 165,
+    "VideoPath": "CS_ChapLoop01_Act0160.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 166,
+    "VideoPath": "CS_ChapLoop01_Act0170.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 167,
+    "VideoPath": "CS_ChapLoop01_Act0180.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 168,
+    "VideoPath": "CS_ChapLoop02_Act0220.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 169,
+    "VideoPath": "CS_ChapLoop02_Act0210.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 170,
+    "VideoPath": "CS_ChapLoop03_Act0010.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 171,
+    "VideoPath": "CS_ChapLoop00_Act0010.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 172,
+    "VideoPath": "CS_ChapLoop00_Act0020.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 230,
+    "VideoPath": "CS_ChapLoop02_Act0230.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 240,
+    "VideoPath": "CS_ChapLoop02_Act0240.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 999,
+    "VideoPath": "CS_ChapLoop_TestRes.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1001,
+    "VideoPath": "CS_Chap01_BattleCollege_01.usm",
+    "CaptionPath": "Config/BattleCollegeCaption/Chap01_BattleCollege_1.json"
+  },
+  {
+    "VideoID": 1002,
+    "VideoPath": "CS_Chap01_BattleCollege_02.usm",
+    "CaptionPath": "Config/BattleCollegeCaption/Chap01_BattleCollege_2.json"
+  },
+  {
+    "VideoID": 1003,
+    "VideoPath": "CS_Chap01_BattleCollege_03.usm",
+    "CaptionPath": "Config/BattleCollegeCaption/Chap01_BattleCollege_3.json"
+  },
+  {
+    "VideoID": 1004,
+    "VideoPath": "CS_Chap01_BattleCollege_04.usm",
+    "CaptionPath": "Config/BattleCollegeCaption/Chap01_BattleCollege_4.json"
+  },
+  {
+    "VideoID": 1005,
+    "VideoPath": "CS_Chap01_BattleCollege_05.usm",
+    "CaptionPath": "Config/BattleCollegeCaption/Chap01_BattleCollege_5.json"
+  },
+  {
+    "VideoID": 1006,
+    "VideoPath": "CS_Chap01_BattleCollege_06.usm",
+    "CaptionPath": "Config/BattleCollegeCaption/Chap01_BattleCollege_6.json"
+  },
+  {
+    "VideoID": 1007,
+    "VideoPath": "CS_Chap01_BattleCollege_07.usm",
+    "CaptionPath": "Config/BattleCollegeCaption/Chap01_BattleCollege_7.json"
+  },
+  {
+    "VideoID": 1008,
+    "VideoPath": "CS_Chap01_BattleCollege_08.usm",
+    "CaptionPath": "Config/BattleCollegeCaption/Chap01_BattleCollege_8.json"
+  },
+  {
+    "VideoID": 1009,
+    "VideoPath": "CS_Chap01_BattleCollege_09.usm",
+    "CaptionPath": "Config/BattleCollegeCaption/Chap01_BattleCollege_9.json"
+  },
+  {
+    "VideoID": 1010,
+    "VideoPath": "CS_Chap01_BattleCollege_10.usm",
+    "CaptionPath": "Config/BattleCollegeCaption/Chap01_BattleCollege_10.json"
+  },
+  {
+    "VideoID": 1011,
+    "VideoPath": "CS_Chap01_BattleCollege_11.usm",
+    "CaptionPath": "Config/BattleCollegeCaption/Chap01_BattleCollege_11.json"
+  },
+  {
+    "VideoID": 1012,
+    "VideoPath": "CS_Chap01_BattleCollege_12.usm",
+    "CaptionPath": "Config/BattleCollegeCaption/Chap01_BattleCollege_12.json"
+  },
+  {
+    "VideoID": 1013,
+    "VideoPath": "CS_Chap01_BattleCollege_13.usm",
+    "CaptionPath": "Config/BattleCollegeCaption/Chap01_BattleCollege_13.json"
+  },
+  {
+    "VideoID": 1014,
+    "VideoPath": "CS_Chap01_BattleCollege_14.usm",
+    "CaptionPath": "Config/BattleCollegeCaption/Chap01_BattleCollege_14.json"
+  },
+  {
+    "VideoID": 1015,
+    "VideoPath": "CS_Chap01_BattleCollege_15.usm",
+    "CaptionPath": "Config/BattleCollegeCaption/Chap01_BattleCollege_15.json"
+  },
+  {
+    "VideoID": 1016,
+    "VideoPath": "CS_Chap01_BattleCollege_16.usm",
+    "CaptionPath": "Config/BattleCollegeCaption/Chap01_BattleCollege_16.json"
+  },
+  {
+    "VideoID": 1017,
+    "VideoPath": "CS_Chap01_BattleCollege_18.usm",
+    "CaptionPath": "Config/BattleCollegeCaption/Chap01_BattleCollege_17.json"
+  },
+  {
+    "VideoID": 1018,
+    "VideoPath": "CS_Chap01_BattleCollege_19.usm",
+    "CaptionPath": "Config/BattleCollegeCaption/Chap01_BattleCollege_18.json"
+  },
+  {
+    "VideoID": 1019,
+    "VideoPath": "CS_Chap01_BattleCollege_17.usm",
+    "CaptionPath": "Config/BattleCollegeCaption/Chap01_BattleCollege_19.json"
+  },
+  {
+    "VideoID": 1020,
+    "VideoPath": "CS_Chap01_BattleCollege_20.usm",
+    "CaptionPath": "Config/BattleCollegeCaption/Chap01_BattleCollege_20.json"
+  },
+  {
+    "VideoID": 1401,
+    "VideoPath": "Chap01_Eff_Dual_A_01.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1402,
+    "VideoPath": "Chap01_Eff_Dual_B_01_m.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1403,
+    "VideoPath": "Chap01_Eff_Dual_B_01_f.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1404,
+    "VideoPath": "Chap01_Eff_Dual_C_01_m.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1405,
+    "VideoPath": "Chap01_Eff_Dual_C_01_f.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1406,
+    "VideoPath": "Chap01_Eff_Dual_B_02_m.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1407,
+    "VideoPath": "Chap01_Eff_Dual_B_02_f.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1408,
+    "VideoPath": "Chap01_Eff_Dual_C_02_m.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1409,
+    "VideoPath": "Chap01_Eff_Dual_C_02_f.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1410,
+    "VideoPath": "Chap01_Eff_Dual_B_03_m.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1411,
+    "VideoPath": "Chap01_Eff_Dual_B_03_f.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1412,
+    "VideoPath": "Chap01_Eff_Dual_C_03_m.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1413,
+    "VideoPath": "Chap01_Eff_Dual_C_03_f.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1414,
+    "VideoPath": "Chap01_Eff_Dual_B_05_m.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1415,
+    "VideoPath": "Chap01_Eff_Dual_B_05_f.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1416,
+    "VideoPath": "Chap01_Eff_Dual_C_05_m.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1417,
+    "VideoPath": "Chap01_Eff_Dual_C_05_f.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1418,
+    "VideoPath": "Chap01_Eff_Dual_B_04_m.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1419,
+    "VideoPath": "Chap01_Eff_Dual_B_04_f.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1420,
+    "VideoPath": "Chap01_Eff_Dual_C_04_m.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1421,
+    "VideoPath": "Chap01_Eff_Dual_C_04_f.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1422,
+    "VideoPath": "Chap01_Eff_Dual_D_01_m.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1423,
+    "VideoPath": "Chap01_Eff_Dual_D_01_f.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1424,
+    "VideoPath": "Chap01_Eff_Dual_E_01_m.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1425,
+    "VideoPath": "Chap01_Eff_Dual_E_01_f.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1426,
+    "VideoPath": "CS_ChapLoop03_Act0020.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1427,
+    "VideoPath": "CS_ChapLoop03_Act0080.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1428,
+    "VideoPath": "CS_ChapLoop03_Act0090.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1429,
+    "VideoPath": "CS_ChapLoop03_Act0030.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1430,
+    "VideoPath": "CS_ChapLoop03_Act0040.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1431,
+    "VideoPath": "CS_ChapLoop03_Act0050.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1432,
+    "VideoPath": "CS_ChapLoop03_Act0060.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1433,
+    "VideoPath": "CS_ChapLoop03_Act0070.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1434,
+    "VideoPath": "CS_Chap03_Act3020_Loop.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1435,
+    "VideoPath": "Chap03_TV_Video_01.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1436,
+    "VideoPath": "CS_ChapLoop03_Act0100.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1437,
+    "VideoPath": "CS_ChapLoop03_Act0110.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1438,
+    "VideoPath": "CS_ChapLoop03_Act0120.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1439,
+    "VideoPath": "CS_ChapLoop03_Act0130.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1440,
+    "VideoPath": "CS_ChapLoop03_Act0140.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1441,
+    "VideoPath": "CS_ChapLoop03_Act0150.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1442,
+    "VideoPath": "CS_ChapLoop03_Act0160.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1443,
+    "VideoPath": "CS_ChapLoop03_Act0170.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1444,
+    "VideoPath": "Chap03_TV_Video_02.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1445,
+    "VideoPath": "Chap03_TV_Video_03.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1446,
+    "VideoPath": "Chap03_TV_Video_04.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1447,
+    "VideoPath": "CS_ChapLoop03_Act0180.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1448,
+    "VideoPath": "CS_ChapLoop03_Act0190.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1449,
+    "VideoPath": "CS_ChapLoop03_Act0200.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1450,
+    "VideoPath": "CS_ChapLoop03_Act0210.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1451,
+    "VideoPath": "CS_ChapLoop03_Act0220.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1452,
+    "VideoPath": "CS_ChapLoop03_Act0230.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1453,
+    "VideoPath": "CS_ChapLoop03_Act0240.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1454,
+    "VideoPath": "CS_ChapLoop03_Act0250.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1455,
+    "VideoPath": "CS_ChapLoop03_Act0260.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1456,
+    "VideoPath": "CS_ChapLoop03_Act0270.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1457,
+    "VideoPath": "CS_ChapLoop03_Act0280.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1458,
+    "VideoPath": "CS_ChapLoop03_Act0290.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1459,
+    "VideoPath": "CS_ChapLoop03_Act0300.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1460,
+    "VideoPath": "CS_ChapLoop03_Act0310.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1461,
+    "VideoPath": "CS_ChapLoop03_Act0320.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1462,
+    "VideoPath": "Chap03_TV_Video_Robin.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1463,
+    "VideoPath": "CS_ChapLoop03_Act0330.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1464,
+    "VideoPath": "CS_ChapLoop02_Act0250.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1465,
+    "VideoPath": "CS_ChapLoop02_Act0260.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1466,
+    "VideoPath": "CS_ChapLoop02_Act0270.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1467,
+    "VideoPath": "CS_ChapLoop02_Act0280.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1468,
+    "VideoPath": "CS_ChapLoop02_Act0290.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1469,
+    "VideoPath": "CS_ChapLoop02_Act0300.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1470,
+    "VideoPath": "CS_ChapLoop02_Act0310.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1471,
+    "VideoPath": "CS_ChapLoop02_Act0320.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1472,
+    "VideoPath": "CS_ChapLoop02_Act0330.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1473,
+    "VideoPath": "CS_ChapLoop02_Act0340.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1474,
+    "VideoPath": "CS_ChapLoop02_Act0350.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1475,
+    "VideoPath": "CS_ChapLoop02_Act0360.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1476,
+    "VideoPath": "CS_ChapLoop02_Act0370.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1477,
+    "VideoPath": "CS_ChapLoop02_Act0380.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1478,
+    "VideoPath": "CS_ChapLoop02_Act0390.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1479,
+    "VideoPath": "CS_ChapLoop02_Act0400.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1480,
+    "VideoPath": "CS_ChapLoop02_Act0410.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1481,
+    "VideoPath": "CS_ChapLoop03_Act0340.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1482,
+    "VideoPath": "CS_ChapLoop03_Act0350.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1483,
+    "VideoPath": "CS_ChapLoop03_Act0360.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1484,
+    "VideoPath": "CS_ChapLoop03_Act0370.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1485,
+    "VideoPath": "CS_ChapLoop03_Act0380.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1486,
+    "VideoPath": "Chap03_TV_Video_3080.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1487,
+    "VideoPath": "CS_ChapLoop03_Act0390.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1488,
+    "VideoPath": "CS_ChapLoop03_Act0400.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1489,
+    "VideoPath": "CS_ChapLoop03_Act0410.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1490,
+    "VideoPath": "CS_ChapLoop03_Act0420.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1491,
+    "VideoPath": "CS_ChapLoop03_Act0430.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1492,
+    "VideoPath": "CS_ChapLoop04_Act0010.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1493,
+    "VideoPath": "CS_ChapLoop04_Act0011.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1494,
+    "VideoPath": "CS_ChapLoop04_Act0020.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1495,
+    "VideoPath": "CS_ChapLoop04_Act0030.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1496,
+    "VideoPath": "CS_ChapLoop04_Act0040.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1497,
+    "VideoPath": "CS_ChapLoop04_Act0041.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1498,
+    "VideoPath": "CS_ChapLoop04_Act0050.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1499,
+    "VideoPath": "CS_ChapLoop04_Act0060.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1500,
+    "VideoPath": "CS_ChapLoop04_Act0031.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1501,
+    "VideoPath": "CS_ChapLoop04_Act0032.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1502,
+    "VideoPath": "CS_ChapLoop04_Act0070.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1503,
+    "VideoPath": "CS_ChapLoop04_Act0080.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1504,
+    "VideoPath": "CS_ChapLoop04_Act0081.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1505,
+    "VideoPath": "CS_ChapLoop04_Act0082.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1506,
+    "VideoPath": "CS_ChapLoop04_Act0083.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1507,
+    "VideoPath": "CS_ChapLoop04_Act0084.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1508,
+    "VideoPath": "CS_ChapLoop04_Act0085.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1509,
+    "VideoPath": "CS_ChapLoop04_Act0090.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1510,
+    "VideoPath": "CS_ChapLoop04_Act0100.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1511,
+    "VideoPath": "CS_ChapLoop04_Act0110.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1512,
+    "VideoPath": "CS_ChapLoop04_Act0120.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1513,
+    "VideoPath": "CS_ChapLoop04_Act0130.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1514,
+    "VideoPath": "CS_ChapLoop04_Act0140.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1515,
+    "VideoPath": "CS_ChapLoop04_Act0131.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1516,
+    "VideoPath": "CS_ChapLoop04_Act0132.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1517,
+    "VideoPath": "CS_ChapLoop04_Act0141.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1518,
+    "VideoPath": "CS_ChapLoop04_Act0150.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1519,
+    "VideoPath": "CS_ChapLoop04_Act0160.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1520,
+    "VideoPath": "CS_ChapLoop04_Act0170.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1528,
+    "VideoPath": "CS_ChapLoop04_Act0171.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1529,
+    "VideoPath": "CS_ChapLoop04_Act0172.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1530,
+    "VideoPath": "CS_ChapLoop04_Act0173.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1521,
+    "VideoPath": "CS_ChapLoop04_Act0180.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1522,
+    "VideoPath": "CS_ChapLoop04_Act0200.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1523,
+    "VideoPath": "CS_ChapLoop04_Act0210.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1533,
+    "VideoPath": "CS_ChapLoop04_Act0211.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1525,
+    "VideoPath": "CS_ChapLoop04_Act0230.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1524,
+    "VideoPath": "CS_ChapLoop04_Act0231.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1526,
+    "VideoPath": "CS_ChapLoop04_Act0240.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1527,
+    "VideoPath": "CS_ChapLoop04_Act0250.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1531,
+    "VideoPath": "CS_ChapLoop04_Act0330.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1532,
+    "VideoPath": "CS_AvatarShowLoop_1407.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1534,
+    "VideoPath": "CS_ChapLoop04_Act0360.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1535,
+    "VideoPath": "Chap04_ActivityMarble_01.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1536,
+    "VideoPath": "Chap04_ActivityMarble_02.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1537,
+    "VideoPath": "Chap04_ActivityMarble_03.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1538,
+    "VideoPath": "Chap04_ActivityMarble_04.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1539,
+    "VideoPath": "Chap04_ActivityMarble_05.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1540,
+    "VideoPath": "Chap04_ActivityMarble_06.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1541,
+    "VideoPath": "Chap04_ActivityMarble_07.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1542,
+    "VideoPath": "Chap04_ActivityMarble_08.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1543,
+    "VideoPath": "Chap04_ActivityMarble_09.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1544,
+    "VideoPath": "Chap04_ActivityMarble_10.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1545,
+    "VideoPath": "Chap04_ActivityMarble_11.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1546,
+    "VideoPath": "CS_ChapLoop04_Act0260.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1547,
+    "VideoPath": "CS_ChapLoop04_Act0261.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1548,
+    "VideoPath": "CS_ChapLoop04_Act0262.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1549,
+    "VideoPath": "CS_ChapLoop04_Act0263.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1550,
+    "VideoPath": "CS_ChapLoop04_Act0264.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1551,
+    "VideoPath": "CS_ChapLoop04_Act0265.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1552,
+    "VideoPath": "CS_ChapLoop04_Act0266.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1554,
+    "VideoPath": "CS_ChapLoop04_Act0270.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1555,
+    "VideoPath": "CS_ChapLoop04_Act0271.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1557,
+    "VideoPath": "CS_ChapLoop04_Act0290.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1558,
+    "VideoPath": "CS_ChapLoop04_Act0300.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1559,
+    "VideoPath": "CS_ChapLoop04_Act0310.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1560,
+    "VideoPath": "CS_ChapLoop04_Act0320.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1561,
+    "VideoPath": "CS_ChapLoop04_Act0430.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1562,
+    "VideoPath": "CS_ChapLoop04_Act0431.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1563,
+    "VideoPath": "CS_ChapLoop04_Act0432.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1564,
+    "VideoPath": "CS_ChapLoop04_Act0433.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1565,
+    "VideoPath": "CS_ChapLoop04_Act0434.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1566,
+    "VideoPath": "CS_ChapLoop04_Act0435.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1567,
+    "VideoPath": "CS_ChapLoop04_Act0436.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1568,
+    "VideoPath": "CS_ChapLoop04_Act0437.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1569,
+    "VideoPath": "CS_ChapLoop04_Act0340.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1570,
+    "VideoPath": "CS_ChapLoop04_Act0341.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1571,
+    "VideoPath": "CS_ChapLoop04_Act0342.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1572,
+    "VideoPath": "CS_ChapLoop04_Act0343.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1573,
+    "VideoPath": "CS_ChapLoop04_Act0344.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1574,
+    "VideoPath": "CS_ChapLoop04_Act0345.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1575,
+    "VideoPath": "CS_ChapLoop04_Act0350.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1576,
+    "VideoPath": "CS_ChapLoop04_Act0370.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1577,
+    "VideoPath": "CS_ChapLoop04_Act0380.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1578,
+    "VideoPath": "CS_ChapLoop04_Act0400.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1579,
+    "VideoPath": "CS_ChapLoop04_Act0410.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1580,
+    "VideoPath": "CS_ChapLoop04_Act0420.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1581,
+    "VideoPath": "CS_ChapLoop04_Act0421.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1582,
+    "VideoPath": "CS_ChapLoop04_Act0440.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1583,
+    "VideoPath": "CS_ChapLoop04_Act0441.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1584,
+    "VideoPath": "CS_ChapLoop04_Act0450.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1585,
+    "VideoPath": "CS_ChapLoop04_Act0460.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1586,
+    "VideoPath": "CS_ChapLoop04_Act0470.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1587,
+    "VideoPath": "CS_ChapLoop04_Act0471.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1590,
+    "VideoPath": "CS_ChapLoop04_Act0480.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1591,
+    "VideoPath": "CS_ChapLoop04_Act0481.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1592,
+    "VideoPath": "CS_ChapLoop04_Act0482.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1593,
+    "VideoPath": "CS_ChapLoop04_Act0483.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1594,
+    "VideoPath": "CS_ChapLoop04_Act0484.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1595,
+    "VideoPath": "CS_ChapLoop04_Act0490.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1596,
+    "VideoPath": "CS_ChapLoop04_Act0500.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1597,
+    "VideoPath": "CS_ChapLoop04_Act0510.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1598,
+    "VideoPath": "CS_AvatarShowLoop_1408.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1599,
+    "VideoPath": "CS_ChapLoop04_Act0520.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1600,
+    "VideoPath": "CS_ChapLoop04_Act0530.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1601,
+    "VideoPath": "CS_ChapLoop04_Act0540.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1602,
+    "VideoPath": "CS_ChapLoop03_Act0440.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1603,
+    "VideoPath": "CS_ChapLoop04_Act0371.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1604,
+    "VideoPath": "CS_ChapLoop04_Act0351.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1605,
+    "VideoPath": "CS_ChapLoop04_Act0352.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1606,
+    "VideoPath": "CS_ChapLoop04_Act0353.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1607,
+    "VideoPath": "CS_ChapLoop04_Act0354.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1608,
+    "VideoPath": "CS_ChapLoop04_Act0411.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1609,
+    "VideoPath": "CS_ChapLoop04_Act0412.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1610,
+    "VideoPath": "CS_ChapLoop04_Act0381.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1611,
+    "VideoPath": "CS_ChapLoop03_Act0450.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1620,
+    "VideoPath": "CS_ChapLoop04_Act0630.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1621,
+    "VideoPath": "CS_ChapLoop04_Act0491.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1622,
+    "VideoPath": "CS_ChapLoop04_Act0511.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1623,
+    "VideoPath": "CS_ChapLoop04_Act0512.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1624,
+    "VideoPath": "CS_ChapLoop04_Act0513.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1625,
+    "VideoPath": "CS_ChapLoop04_Act0550.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1626,
+    "VideoPath": "CS_ChapLoop04_Act0560.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1627,
+    "VideoPath": "CS_ChapLoop04_Act0561.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1628,
+    "VideoPath": "CS_ChapLoop04_Act0580.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1629,
+    "VideoPath": "CS_ChapLoop04_Act0590.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1630,
+    "VideoPath": "CS_ChapLoop04_Act0600.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1631,
+    "VideoPath": "CS_ChapLoop04_Act0610.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1632,
+    "VideoPath": "CS_ChapLoop04_Act0620.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1633,
+    "VideoPath": "CS_ChapLoop04_Act0581.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1634,
+    "VideoPath": "CS_ChapLoop04_Act0591.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1635,
+    "VideoPath": "CS_ChapLoop04_Act0592.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1636,
+    "VideoPath": "CS_ChapLoop04_Act0593.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1637,
+    "VideoPath": "CS_ChapLoop04_Act0601.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1638,
+    "VideoPath": "CS_ChapLoop04_Act0602.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1639,
+    "VideoPath": "CS_ChapLoop04_Act0603.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1640,
+    "VideoPath": "CS_ChapLoop04_Act0604.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1641,
+    "VideoPath": "CS_ChapLoop04_Act0605.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1642,
+    "VideoPath": "CS_ChapLoop04_Act0606.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1643,
+    "VideoPath": "CS_ChapLoop04_Act0607.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1644,
+    "VideoPath": "CS_ChapLoop04_Act0608.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1645,
+    "VideoPath": "CS_AvatarShowLoop_1415.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1646,
+    "VideoPath": "CS_ChapLoop03_Act0460.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1647,
+    "VideoPath": "CS_ChapLoop03_Act0461.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1648,
+    "VideoPath": "CS_ChapLoop03_Act0470.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1649,
+    "VideoPath": "CS_ChapLoop03_Act0480.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1650,
+    "VideoPath": "CS_ChapLoop03_Act0490.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1651,
+    "VideoPath": "CS_ChapLoop03_Act0500.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1652,
+    "VideoPath": "CS_ChapLoop03_Act0501.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1653,
+    "VideoPath": "CS_ChapLoop03_Act0502.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1654,
+    "VideoPath": "CS_ChapLoop03_Act0510.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1655,
+    "VideoPath": "CS_ChapLoop03_Act0520.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1656,
+    "VideoPath": "CS_ChapLoop03_Act0530.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1657,
+    "VideoPath": "CS_ChapLoop04_Act0640.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1658,
+    "VideoPath": "CS_ChapLoop04_Act0641.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1659,
+    "VideoPath": "CS_ChapLoop04_Act0642.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1660,
+    "VideoPath": "CS_ChapLoop04_Act0650.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1661,
+    "VideoPath": "CS_ChapLoop04_Act0651.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1662,
+    "VideoPath": "CS_ChapLoop04_Act0652.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1663,
+    "VideoPath": "CS_ChapLoop04_Act0653.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1664,
+    "VideoPath": "CS_ChapLoop04_Act0654.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1665,
+    "VideoPath": "CS_ChapLoop04_Act0655.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1666,
+    "VideoPath": "CS_ChapLoop04_Act0656.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1667,
+    "VideoPath": "CS_ChapLoop04_Act0657.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1668,
+    "VideoPath": "CS_ChapLoop04_Act0658.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1669,
+    "VideoPath": "CS_ChapLoop04_Act0659.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1670,
+    "VideoPath": "CS_ChapLoop04_Act0660.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1671,
+    "VideoPath": "CS_ChapLoop04_Act0661.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1672,
+    "VideoPath": "CS_ChapLoop04_Act0662.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1673,
+    "VideoPath": "CS_ChapLoop04_Act0663.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1674,
+    "VideoPath": "CS_ChapLoop04_Act0664.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1675,
+    "VideoPath": "CS_ChapLoop04_Act0665.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1676,
+    "VideoPath": "CS_ChapLoop04_Act0670.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1677,
+    "VideoPath": "CS_ChapLoop04_Act0671.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1678,
+    "VideoPath": "CS_ChapLoop04_Act0672.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1679,
+    "VideoPath": "CS_ChapLoop04_Act0673.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1680,
+    "VideoPath": "CS_ChapLoop04_Act0674.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1681,
+    "VideoPath": "CS_ChapLoop04_Act0675.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1682,
+    "VideoPath": "CS_ChapLoop04_Act0676.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1683,
+    "VideoPath": "CS_ChapLoop04_Act0677.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1684,
+    "VideoPath": "CS_ChapLoop04_Act0678.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1685,
+    "VideoPath": "CS_ChapLoop04_Act0679.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1686,
+    "VideoPath": "CS_ChapLoop04_Act0680.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1687,
+    "VideoPath": "CS_ChapLoop04_Act0681.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1690,
+    "VideoPath": "CS_ChapLoop04_Act0710.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1691,
+    "VideoPath": "CS_ChapLoop04_Act0690.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1692,
+    "VideoPath": "CS_ChapLoop04_Act0691.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1693,
+    "VideoPath": "CS_ChapLoop04_Act0692.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1694,
+    "VideoPath": "CS_ChapLoop04_Act0693.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1695,
+    "VideoPath": "CS_ChapLoop04_Act0694.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1696,
+    "VideoPath": "CS_ChapLoop04_Act0695.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1697,
+    "VideoPath": "CS_ChapLoop04_Act0700.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1698,
+    "VideoPath": "CS_ChapLoop04_Act0701.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1699,
+    "VideoPath": "CS_ChapLoop04_Act0702.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1700,
+    "VideoPath": "CS_ChapLoop04_Act0703.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1701,
+    "VideoPath": "CS_ChapLoop04_Act0704.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1702,
+    "VideoPath": "CS_ChapLoop04_Act0705.usm",
+    "IsPlayerInvolved": true,
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1703,
+    "VideoPath": "Chap04_WSW_nothing_30fps.usm",
+    "CaptionPath": ""
+  },
+  {
+    "VideoID": 1704,
+    "VideoPath": "Chap04_WSW_fisheye_30fps.usm",
+    "CaptionPath": ""
+  }
+]
