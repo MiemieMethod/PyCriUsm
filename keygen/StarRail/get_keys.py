@@ -1,3 +1,4 @@
+from math import floor
 from os import write
 
 from dataclasses_json import dataclass_json, LetterCase
@@ -28,8 +29,10 @@ def _get_hsr_decrypt_key_0_7(video_name: str, version_key: int):
 		name_hash = (name_hash * 11 + i) & 0xffffffffffffffff
 	return ((version_key + name_hash) & 0xffffffffffffffff) % 72043514036987937
 
-def _get_hsr_decrypt_key_2_2(video_name: str, version_key: int, game_version: int):
-	rot = (game_version - len(video_name)) % len(video_name)
+def _get_hsr_decrypt_key_2_2(video_name: str, version_key: int, name_stripped: int):
+	game_version = floor(version_key / 10000000000000000)
+	video_name = video_name[name_stripped:]
+	rot = game_version % len(video_name)
 	video_name = video_name.encode()
 	video_name = video_name[rot:] + video_name[:rot]
 	name_hash = 0
@@ -37,11 +40,11 @@ def _get_hsr_decrypt_key_2_2(video_name: str, version_key: int, game_version: in
 		name_hash = (name_hash * 7 + i) & 0xffffffffffffffff
 	return ((version_key + name_hash - game_version * 10000000000000000) & 0xffffffffffffffff) % 72043514036987937
 
-def _get_hsr_decrypt_key(video_name: str, version_key: int, game_version: int):
+def _get_hsr_decrypt_key(video_name: str, version_key: int, name_stripped: int):
 	if version_key < 72043514036987937:
 		return _get_hsr_decrypt_key_0_7(video_name, version_key)
 	else:
-		return _get_hsr_decrypt_key_2_2(video_name, version_key, game_version)
+		return _get_hsr_decrypt_key_2_2(video_name, version_key, name_stripped)
 
 def get_keys(update_for: str):
 	root = Path(__file__).parent
@@ -62,7 +65,10 @@ def get_keys(update_for: str):
 	with open(sub_root / 'GetVideoVersionKeyScRsp.json') as f:
 		data = json.load(f)
 	tmp_keys = {}
+	which_is_video = None
+	which_is_cg = None
 	for group_key in data:
+		tmp_keys[group_key] = {}
 		group = data[group_key]
 		if isinstance(group, list):
 			for item in group:
@@ -71,21 +77,15 @@ def get_keys(update_for: str):
 				except Exception:
 					continue
 				if k1 > 10_000:
-					if k2 not in tmp_keys:
-						tmp_keys[k2] = k1
-				else:
-					if k1 not in tmp_keys:
-						tmp_keys[k1] = k2
-
-	with open(root / 'keys_from.json') as f:
-		keys_from_data = json.load(f)
-	video_versions = {}
-	for group_key in keys_from_data:
-		group = keys_from_data[group_key]
-		for video in group:
-			video_versions[video] = int(float(group_key) * 10)
-	if update_for not in keys_from_data:
-		keys_from_data[update_for] = []
+					k3 = k1
+					k1 = k2
+					k2 = k3
+				if k1 not in tmp_keys[group_key]:
+					tmp_keys[group_key][k1] = k2
+				if k1 == 1:
+					which_is_video = group_key
+				if k1 == 1464:
+					which_is_cg = group_key
 
 	keys = {}
 	with open(sub_root / 'VideoConfig.json') as f:
@@ -111,7 +111,14 @@ def get_keys(update_for: str):
 		loaded_key.add(i.VideoID)
 		if is_encryption_data[str(i.VideoID)].Encryption is False:
 			continue
-		version_key = tmp_keys.get(i.VideoID, None)
+		version_key = None
+		name_stripped = 0
+		if which_is_video is not None and i.VideoID in tmp_keys[which_is_video]:
+			version_key = tmp_keys[which_is_video][i.VideoID]
+			name_stripped = 0
+		if which_is_cg is not None and i.VideoID in tmp_keys[which_is_cg]:
+			version_key = tmp_keys[which_is_cg][i.VideoID]
+			name_stripped = 7
 		if version_key is None:
 			Warning(f'Could not find {i.VideoPath} key')
 			continue
@@ -123,10 +130,7 @@ def get_keys(update_for: str):
 		for name in names:
 			if name in keys:
 				continue
-			if name not in video_versions:
-				keys_from_data[update_for].append(name)
-				video_versions[name] = int(float(update_for) * 10)
-			key = _get_hsr_decrypt_key(name, version_key, video_versions[name])
+			key = _get_hsr_decrypt_key(name, version_key, name_stripped)
 			keys[name] = key
 
 	for name in keys:
@@ -138,16 +142,14 @@ def get_keys(update_for: str):
 				updated = True
 		if not updated:
 			all_keys[update_for][name] = key
-	return 1, all_keys, keys_from_data
+	return 1, all_keys
 
 
 if __name__ == '__main__':
 	VERSION = "3.8"
-	result, all_keys, keys_from_data = get_keys(VERSION)
+	result, all_keys = get_keys(VERSION)
 	keys_path = Path(__file__).parent.parent.parent / 'PyCriUsm' / 'keys.json'
 	keys = {}
 	keys["StarRail"] = {'Encrytion': result, 'KeyMap': all_keys}
 	with open(keys_path, 'w', encoding='utf-8') as f:
 		json.dump(keys, f, ensure_ascii=False, indent=4)
-	with open(Path(__file__).parent / 'keys_from.json', 'w', encoding='utf-8') as f:
-		json.dump(keys_from_data, f, ensure_ascii=False, indent=4)
