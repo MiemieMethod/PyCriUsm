@@ -91,11 +91,11 @@ def get_keys(update_for: str):
 	with open(sub_root / 'VideoConfig.json') as f:
 		data = json.load(f)
 	with open(sub_root / 'LoopCGConfig.json') as f:
-		data.extned(json.load(f))
+		data.extend(json.load(f))
 	with open(sub_root / 'VideoEncryptionConfig.json') as f:
 		is_encryption_data = json.load(f)
 	with open(sub_root / 'LoopCGEncryptionConfig.json') as f:
-		is_encryption_data.extned(json.load(f))
+		is_encryption_data.extend(json.load(f))
 	if isinstance(data, dict):
 		data = data.values()
 	if isinstance(is_encryption_data, list):
