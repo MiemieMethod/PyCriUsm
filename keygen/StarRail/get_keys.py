@@ -31,14 +31,15 @@ def _get_hsr_decrypt_key_0_7(video_name: str, version_key: int):
 
 def _get_hsr_decrypt_key_2_2(video_name: str, version_key: int, name_stripped: int):
 	game_version = floor(version_key / 10000000000000000)
+	version_key = version_key % 10000000000000000
 	video_name = video_name[name_stripped:]
 	rot = game_version % len(video_name)
-	video_name = video_name.encode()
 	video_name = video_name[rot:] + video_name[:rot]
+	video_name = video_name.encode()
 	name_hash = 0
 	for i in video_name:
 		name_hash = (name_hash * 7 + i) & 0xffffffffffffffff
-	return ((version_key + name_hash - game_version * 10000000000000000) & 0xffffffffffffffff) % 72043514036987937
+	return ((version_key + name_hash) & 0xffffffffffffffff) % 72043514036987937
 
 def _get_hsr_decrypt_key(video_name: str, version_key: int, name_stripped: int):
 	if version_key < 72043514036987937:
