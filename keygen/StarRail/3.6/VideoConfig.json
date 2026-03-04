@@ -1,0 +1,1453 @@
+[
+  {
+    "video_id": 1,
+    "video_path": "CS_Chap01_Act010.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act010_Caption.json"
+  },
+  {
+    "video_id": 2,
+    "video_path": "CS_Chap01_Act020.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act020_Caption.json"
+  },
+  {
+    "video_id": 3,
+    "video_path": "CS_Chap01_Act110.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act110_Caption.json"
+  },
+  {
+    "video_id": 4,
+    "video_path": "CS_Chap01_Act120.usm",
+    "is_player_involved": true,
+    "caption_path": ""
+  },
+  {
+    "video_id": 5,
+    "video_path": "CS_Chap01_Act130.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act130_Caption.json"
+  },
+  {
+    "video_id": 7,
+    "video_path": "CS_Chap01_Act150.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act150_Caption.json"
+  },
+  {
+    "video_id": 8,
+    "video_path": "CS_Chap00_Act210.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act210_Caption.json"
+  },
+  {
+    "video_id": 16,
+    "video_path": "CS_Chap00_Act270.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act270_Caption.json"
+  },
+  {
+    "video_id": 21,
+    "video_path": "CS_Chap00_Act300.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act300_Caption.json"
+  },
+  {
+    "video_id": 32,
+    "video_path": "CS_AvatarShow_1407.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 33,
+    "video_path": "CS_AvatarShow_1408.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 34,
+    "video_path": "CS_AvatarShowTransition_1408.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 100,
+    "video_path": "CS_Chap01_Act3010.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act3010_Caption.json"
+  },
+  {
+    "video_id": 101,
+    "video_path": "CS_Chap01_Act3020.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act3020_Caption.json"
+  },
+  {
+    "video_id": 102,
+    "video_path": "CS_Chap01_Act3030.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act3030_Caption.json"
+  },
+  {
+    "video_id": 310,
+    "video_path": "CS_Chap00_Act310.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act310_Caption.json"
+  },
+  {
+    "video_id": 320,
+    "video_path": "CS_Chap00_Act320.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act320_Caption.json"
+  },
+  {
+    "video_id": 301,
+    "video_path": "CS_Chap00_Act3010.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act3010_Caption.json"
+  },
+  {
+    "video_id": 302,
+    "video_path": "CS_Chap00_Act3020.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act3020_Caption.json"
+  },
+  {
+    "video_id": 330,
+    "video_path": "CS_Chap00_Act330.usm",
+    "is_player_involved": true,
+    "caption_path": ""
+  },
+  {
+    "video_id": 340,
+    "video_path": "CS_Chap00_Act340.usm",
+    "is_player_involved": true,
+    "caption_path": ""
+  },
+  {
+    "video_id": 350,
+    "video_path": "CS_Chap00_Act350.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act350_Caption.json"
+  },
+  {
+    "video_id": 360,
+    "video_path": "CS_Chap00_Act360.usm",
+    "is_player_involved": true,
+    "caption_path": ""
+  },
+  {
+    "video_id": 361,
+    "video_path": "CS_Chap00_Act361.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act361_Caption.json"
+  },
+  {
+    "video_id": 370,
+    "video_path": "CS_Chap00_Act370.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 380,
+    "video_path": "CS_Chap00_Act380.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act380_Caption.json"
+  },
+  {
+    "video_id": 390,
+    "video_path": "CS_Chap00_Act390.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act390_Caption.json"
+  },
+  {
+    "video_id": 400,
+    "video_path": "CS_Chap00_Act400.usm",
+    "is_player_involved": true,
+    "caption_path": ""
+  },
+  {
+    "video_id": 410,
+    "video_path": "CS_Chap00_Act410.usm",
+    "is_player_involved": true,
+    "caption_path": ""
+  },
+  {
+    "video_id": 411,
+    "video_path": "CS_Chap00_Act411.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act411_Caption.json"
+  },
+  {
+    "video_id": 420,
+    "video_path": "CS_Chap00_Act420.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap00_Act420_Caption.json"
+  },
+  {
+    "video_id": 999,
+    "video_path": "CS_Chap_TestRes.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 1160,
+    "video_path": "CS_Chap01_Act160.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act160_Caption.json"
+  },
+  {
+    "video_id": 1170,
+    "video_path": "CS_Chap01_Act170.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act170_Caption.json"
+  },
+  {
+    "video_id": 1180,
+    "video_path": "CS_Chap01_Act180.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act180_Caption.json"
+  },
+  {
+    "video_id": 1190,
+    "video_path": "CS_Chap01_Act190.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act190_Caption.json"
+  },
+  {
+    "video_id": 1200,
+    "video_path": "CS_Chap01_Act200.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act200_Caption.json"
+  },
+  {
+    "video_id": 1210,
+    "video_path": "CS_Chap01_Act210.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act210_Caption.json"
+  },
+  {
+    "video_id": 1220,
+    "video_path": "CS_Chap01_Act220.usm",
+    "is_player_involved": true,
+    "caption_path": ""
+  },
+  {
+    "video_id": 1221,
+    "video_path": "CS_Chap01_Act221.usm",
+    "is_player_involved": true,
+    "caption_path": ""
+  },
+  {
+    "video_id": 1222,
+    "video_path": "CS_Chap01_Act222.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 1223,
+    "video_path": "CS_Chap01_Act223.usm",
+    "is_player_involved": true,
+    "caption_path": ""
+  },
+  {
+    "video_id": 1224,
+    "video_path": "CS_Chap01_Act224.usm",
+    "is_player_involved": true,
+    "caption_path": ""
+  },
+  {
+    "video_id": 1230,
+    "video_path": "CS_Chap01_Act230.usm",
+    "is_player_involved": true,
+    "caption_path": ""
+  },
+  {
+    "video_id": 1240,
+    "video_path": "CS_Chap01_Act240.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act240_Caption.json"
+  },
+  {
+    "video_id": 2302,
+    "video_path": "CS_Chap02_Act3020.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act3020_Caption.json"
+  },
+  {
+    "video_id": 1304,
+    "video_path": "CS_Chap01_Act3040.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap01_Act3040_Caption.json"
+  },
+  {
+    "video_id": 2420,
+    "video_path": "CS_Chap02_Act420.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act420_Caption.json"
+  },
+  {
+    "video_id": 2440,
+    "video_path": "CS_Chap02_Act440.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act440_Caption.json"
+  },
+  {
+    "video_id": 2450,
+    "video_path": "CS_Chap02_Act450.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act450_Caption.json"
+  },
+  {
+    "video_id": 2460,
+    "video_path": "CS_Chap02_Act460.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act460_Caption.json"
+  },
+  {
+    "video_id": 2480,
+    "video_path": "CS_Chap02_Act480.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act480_Caption.json"
+  },
+  {
+    "video_id": 2490,
+    "video_path": "CS_Chap02_Act490.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act490_Caption.json"
+  },
+  {
+    "video_id": 2530,
+    "video_path": "CS_Chap02_Act530.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 2550,
+    "video_path": "CS_Chap02_Act550.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act550_Caption.json"
+  },
+  {
+    "video_id": 2560,
+    "video_path": "CS_Chap02_Act560.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 2570,
+    "video_path": "CS_Chap02_Act570.usm",
+    "is_player_involved": true,
+    "caption_path": ""
+  },
+  {
+    "video_id": 2580,
+    "video_path": "CS_Chap02_Act580.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act580_Caption.json"
+  },
+  {
+    "video_id": 2620,
+    "video_path": "CS_Chap02_Act620.usm",
+    "is_player_involved": true,
+    "caption_path": ""
+  },
+  {
+    "video_id": 2630,
+    "video_path": "CS_Chap02_Act630.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act630_Caption.json"
+  },
+  {
+    "video_id": 2640,
+    "video_path": "CS_Chap02_Act640.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act640_Caption.json"
+  },
+  {
+    "video_id": 2660,
+    "video_path": "CS_Chap02_Act660.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act660_Caption.json"
+  },
+  {
+    "video_id": 2670,
+    "video_path": "CS_Chap02_Act670.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act670_Caption.json"
+  },
+  {
+    "video_id": 2680,
+    "video_path": "CS_Chap02_Act680.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act680_Caption.json"
+  },
+  {
+    "video_id": 2690,
+    "video_path": "CS_Chap02_Act690.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act690_Caption.json"
+  },
+  {
+    "video_id": 2700,
+    "video_path": "CS_Chap02_Act700.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act700_Caption.json"
+  },
+  {
+    "video_id": 2701,
+    "video_path": "CS_Chap02_Act701.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act701_Caption.json"
+  },
+  {
+    "video_id": 2710,
+    "video_path": "CS_Chap02_Act710.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 2720,
+    "video_path": "CS_Chap02_Act720.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act720_Caption.json"
+  },
+  {
+    "video_id": 2730,
+    "video_path": "CS_Chap02_Act730.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 2740,
+    "video_path": "CS_Chap02_Act740.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 2750,
+    "video_path": "CS_Chap02_Act750.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 2760,
+    "video_path": "CS_Chap02_Act760.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 3010,
+    "video_path": "CS_Chap03_Act010.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act010_Caption.json"
+  },
+  {
+    "video_id": 3020,
+    "video_path": "CS_Chap03_Act020.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act020_Caption.json"
+  },
+  {
+    "video_id": 3030,
+    "video_path": "CS_Chap03_Act030.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act030_Caption.json"
+  },
+  {
+    "video_id": 3040,
+    "video_path": "CS_Chap03_Act040.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act040_Caption.json"
+  },
+  {
+    "video_id": 3050,
+    "video_path": "CS_Chap03_Act050.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act050_Caption.json"
+  },
+  {
+    "video_id": 3060,
+    "video_path": "CS_Chap03_Act060.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act060_Caption.json"
+  },
+  {
+    "video_id": 3070,
+    "video_path": "CS_Chap03_Act070.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act070_Caption.json"
+  },
+  {
+    "video_id": 3080,
+    "video_path": "CS_Chap03_Act080.usm",
+    "is_player_involved": true,
+    "caption_path": ""
+  },
+  {
+    "video_id": 3090,
+    "video_path": "CS_Chap03_Act090.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act090_Caption.json"
+  },
+  {
+    "video_id": 3100,
+    "video_path": "CS_Chap03_Act100.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act100_Caption.json"
+  },
+  {
+    "video_id": 3110,
+    "video_path": "CS_Chap03_Act110.usm",
+    "is_player_involved": true,
+    "caption_path": ""
+  },
+  {
+    "video_id": 3120,
+    "video_path": "CS_Chap03_Act120.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act120_Caption.json"
+  },
+  {
+    "video_id": 3130,
+    "video_path": "CS_Chap03_Act130.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act130_Caption.json"
+  },
+  {
+    "video_id": 3140,
+    "video_path": "CS_Chap03_Act140.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 3150,
+    "video_path": "CS_Chap03_Act150.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act150_Caption.json"
+  },
+  {
+    "video_id": 3160,
+    "video_path": "CS_Chap03_Act160.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act160_Caption.json"
+  },
+  {
+    "video_id": 3170,
+    "video_path": "CS_Chap03_Act170.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act170_Caption.json"
+  },
+  {
+    "video_id": 3180,
+    "video_path": "CS_Chap03_Act180.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act180_Caption.json"
+  },
+  {
+    "video_id": 3301,
+    "video_path": "CS_Chap03_Act3010.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act3010_Caption.json"
+  },
+  {
+    "video_id": 3302,
+    "video_path": "CS_Chap03_Act3020.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act3020_Caption.json"
+  },
+  {
+    "video_id": 3190,
+    "video_path": "CS_Chap03_Act190.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act190_Caption.json"
+  },
+  {
+    "video_id": 3191,
+    "video_path": "CS_Chap03_Act191.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act191_Caption.json"
+  },
+  {
+    "video_id": 3200,
+    "video_path": "CS_Chap03_Act200.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act200_Caption.json"
+  },
+  {
+    "video_id": 3210,
+    "video_path": "CS_Chap03_Act210.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act210_Caption.json"
+  },
+  {
+    "video_id": 3220,
+    "video_path": "CS_Chap03_Act220.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act220_Caption.json"
+  },
+  {
+    "video_id": 3230,
+    "video_path": "CS_Chap03_Act230.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act230_Caption.json"
+  },
+  {
+    "video_id": 3240,
+    "video_path": "CS_Chap03_Act240.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act240_Caption.json"
+  },
+  {
+    "video_id": 3250,
+    "video_path": "CS_Chap03_Act250.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act250_Caption.json"
+  },
+  {
+    "video_id": 3260,
+    "video_path": "CS_Chap03_Act260.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act260_Caption.json"
+  },
+  {
+    "video_id": 3270,
+    "video_path": "CS_Chap03_Act270.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 3280,
+    "video_path": "CS_Chap03_Act280.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 3290,
+    "video_path": "CS_Chap03_Act290.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 3291,
+    "video_path": "CS_Chap03_Act291.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 3292,
+    "video_path": "CS_Chap03_Act292.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 3293,
+    "video_path": "CS_Chap03_Act293.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 3294,
+    "video_path": "CS_Chap03_Act294.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 3295,
+    "video_path": "CS_Chap03_Act295.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 3296,
+    "video_path": "CS_Chap03_Act296.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 3297,
+    "video_path": "CS_Chap03_Act297.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 3298,
+    "video_path": "CS_Chap03_Act298.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 3300,
+    "video_path": "CS_Chap03_Act300.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act300_Caption.json"
+  },
+  {
+    "video_id": 3320,
+    "video_path": "CS_Chap03_Act320.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act320_Caption.json"
+  },
+  {
+    "video_id": 3330,
+    "video_path": "CS_Chap03_Act330.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act330_Caption.json"
+  },
+  {
+    "video_id": 3340,
+    "video_path": "CS_Chap03_Act340.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act340_Caption.json"
+  },
+  {
+    "video_id": 3350,
+    "video_path": "CS_Chap03_Act350.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act350_Caption.json"
+  },
+  {
+    "video_id": 3360,
+    "video_path": "CS_Chap03_Act360.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act360_Caption.json"
+  },
+  {
+    "video_id": 3370,
+    "video_path": "CS_Chap03_Act370.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act370_Caption.json"
+  },
+  {
+    "video_id": 3380,
+    "video_path": "CS_Chap03_Act380.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act380_Caption.json"
+  },
+  {
+    "video_id": 3390,
+    "video_path": "CS_Chap03_Act390.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act390_Caption.json"
+  },
+  {
+    "video_id": 3400,
+    "video_path": "CS_Chap03_Act400.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act400_Caption.json"
+  },
+  {
+    "video_id": 3410,
+    "video_path": "CS_Chap03_Act410.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act410_Caption.json"
+  },
+  {
+    "video_id": 3420,
+    "video_path": "CS_Chap03_Act420.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 3421,
+    "video_path": "CS_Chap03_Act3030.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act3030_Caption.json"
+  },
+  {
+    "video_id": 3422,
+    "video_path": "CS_Chap03_Act3040.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act3040_Caption.json"
+  },
+  {
+    "video_id": 3423,
+    "video_path": "CS_Chap03_Act3050.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act3050_Caption.json"
+  },
+  {
+    "video_id": 3430,
+    "video_path": "CS_Chap03_Act430.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act430_Caption.json"
+  },
+  {
+    "video_id": 3440,
+    "video_path": "CS_Chap03_Act440.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act440_Caption.json"
+  },
+  {
+    "video_id": 3450,
+    "video_path": "CS_Chap03_Act450.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act450_Caption.json"
+  },
+  {
+    "video_id": 2770,
+    "video_path": "CS_Chap02_Act770.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act770_Caption.json"
+  },
+  {
+    "video_id": 2780,
+    "video_path": "CS_Chap02_Act780.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act780_Caption.json"
+  },
+  {
+    "video_id": 2790,
+    "video_path": "CS_Chap02_Act790.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act790_Caption.json"
+  },
+  {
+    "video_id": 2800,
+    "video_path": "CS_Chap02_Act800.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 2810,
+    "video_path": "CS_Chap02_Act810.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act810_Caption.json"
+  },
+  {
+    "video_id": 2820,
+    "video_path": "CS_Chap02_Act820.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act820_Caption.json"
+  },
+  {
+    "video_id": 2840,
+    "video_path": "CS_Chap02_Act840.usm",
+    "is_player_involved": true,
+    "caption_path": ""
+  },
+  {
+    "video_id": 2303,
+    "video_path": "CS_Chap02_Act3030.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act3030_Caption.json"
+  },
+  {
+    "video_id": 2850,
+    "video_path": "CS_Chap02_Act850.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act850_Caption.json"
+  },
+  {
+    "video_id": 2860,
+    "video_path": "CS_Chap02_Act860.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 2870,
+    "video_path": "CS_Chap02_Act870.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act870_Caption.json"
+  },
+  {
+    "video_id": 2880,
+    "video_path": "CS_Chap02_Act880.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act880_Caption.json"
+  },
+  {
+    "video_id": 2890,
+    "video_path": "CS_Chap02_Act890.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act890_Caption.json"
+  },
+  {
+    "video_id": 2900,
+    "video_path": "CS_Chap02_Act900.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act900_Caption.json"
+  },
+  {
+    "video_id": 2910,
+    "video_path": "CS_Chap02_Act910.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act910_Caption.json"
+  },
+  {
+    "video_id": 2920,
+    "video_path": "CS_Chap02_Act920.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act920_Caption.json"
+  },
+  {
+    "video_id": 2930,
+    "video_path": "CS_Chap02_Act930.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act930_Caption.json"
+  },
+  {
+    "video_id": 2940,
+    "video_path": "CS_Chap02_Act940.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act940_Caption.json"
+  },
+  {
+    "video_id": 2950,
+    "video_path": "CS_Chap02_Act950.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap02_Act950_Caption.json"
+  },
+  {
+    "video_id": 2960,
+    "video_path": "CS_Chap02_Act960.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 2970,
+    "video_path": "CS_Chap02_Act970.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 3460,
+    "video_path": "CS_Chap03_Act460.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act460_Caption.json"
+  },
+  {
+    "video_id": 3470,
+    "video_path": "CS_Chap03_Act470.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act470_Caption.json"
+  },
+  {
+    "video_id": 3480,
+    "video_path": "CS_Chap03_Act480.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act480_Caption.json"
+  },
+  {
+    "video_id": 3490,
+    "video_path": "CS_Chap03_Act490.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act490_Caption.json"
+  },
+  {
+    "video_id": 3500,
+    "video_path": "CS_Chap03_Act500.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act500_Caption.json"
+  },
+  {
+    "video_id": 3510,
+    "video_path": "CS_Chap03_Act510.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act510_Caption.json"
+  },
+  {
+    "video_id": 3520,
+    "video_path": "CS_Chap03_Act520.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act520_Caption.json"
+  },
+  {
+    "video_id": 3530,
+    "video_path": "CS_Chap03_Act530.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act530_Caption.json"
+  },
+  {
+    "video_id": 3540,
+    "video_path": "CS_Chap03_Act3060.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 3550,
+    "video_path": "CS_Chap03_Act3070.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act3070_Caption.json"
+  },
+  {
+    "video_id": 3560,
+    "video_path": "CS_Chap03_Act3080.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act3080_Caption.json"
+  },
+  {
+    "video_id": 3570,
+    "video_path": "CS_Chap03_Act540.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 3561,
+    "video_path": "CS_Chap03_Act560.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act560_Caption.json"
+  },
+  {
+    "video_id": 3571,
+    "video_path": "CS_Chap03_Act570.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act570_Caption.json"
+  },
+  {
+    "video_id": 3580,
+    "video_path": "CS_Chap03_Act580.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act580_Caption.json"
+  },
+  {
+    "video_id": 3590,
+    "video_path": "CS_Chap03_Act590.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act590_Caption.json"
+  },
+  {
+    "video_id": 3600,
+    "video_path": "CS_Chap03_Act600.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act600_Caption.json"
+  },
+  {
+    "video_id": 3610,
+    "video_path": "CS_Chap03_Act610.usm",
+    "is_player_involved": true,
+    "caption_path": ""
+  },
+  {
+    "video_id": 4010,
+    "video_path": "CS_Chap04_Act010.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act010_Caption.json"
+  },
+  {
+    "video_id": 4020,
+    "video_path": "CS_Chap04_Act020.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act020_Caption.json"
+  },
+  {
+    "video_id": 4030,
+    "video_path": "CS_Chap04_Act030.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act030_Caption.json"
+  },
+  {
+    "video_id": 4040,
+    "video_path": "CS_Chap04_Act040.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act040_Caption.json"
+  },
+  {
+    "video_id": 4050,
+    "video_path": "CS_Chap04_Act050.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act050_Caption.json"
+  },
+  {
+    "video_id": 4060,
+    "video_path": "CS_Chap04_Act060.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act060_Caption.json"
+  },
+  {
+    "video_id": 4070,
+    "video_path": "CS_Chap04_Act070.usm",
+    "is_player_involved": true,
+    "caption_path": ""
+  },
+  {
+    "video_id": 4080,
+    "video_path": "CS_Chap04_Act080.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act080_Caption.json"
+  },
+  {
+    "video_id": 4090,
+    "video_path": "CS_Chap04_Act090.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act090_Caption.json"
+  },
+  {
+    "video_id": 4100,
+    "video_path": "CS_Chap04_Act100.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act100_Caption.json"
+  },
+  {
+    "video_id": 4110,
+    "video_path": "CS_Chap04_Act110.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act110_Caption.json"
+  },
+  {
+    "video_id": 4120,
+    "video_path": "CS_Chap04_Act120.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act120_Caption.json"
+  },
+  {
+    "video_id": 4130,
+    "video_path": "CS_Chap04_Act130.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act130_Caption.json"
+  },
+  {
+    "video_id": 4140,
+    "video_path": "CS_Chap04_Act140.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act140_Caption.json"
+  },
+  {
+    "video_id": 4150,
+    "video_path": "CS_Chap04_Act150.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act150_Caption.json"
+  },
+  {
+    "video_id": 4160,
+    "video_path": "CS_Chap04_Act160.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act160_Caption.json"
+  },
+  {
+    "video_id": 4170,
+    "video_path": "CS_Chap04_Act170.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act170_Caption.json"
+  },
+  {
+    "video_id": 4180,
+    "video_path": "CS_Chap04_Act180.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act180_Caption.json"
+  },
+  {
+    "video_id": 4190,
+    "video_path": "CS_Chap04_Act190.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act190_Caption.json"
+  },
+  {
+    "video_id": 4200,
+    "video_path": "CS_Chap04_Act200.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act200_Caption.json"
+  },
+  {
+    "video_id": 4210,
+    "video_path": "CS_Chap04_Act210.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act210_Caption.json"
+  },
+  {
+    "video_id": 4220,
+    "video_path": "CS_Chap04_Act220.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act220_Caption.json"
+  },
+  {
+    "video_id": 4230,
+    "video_path": "CS_Chap04_Act230.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act230_Caption.json"
+  },
+  {
+    "video_id": 4240,
+    "video_path": "CS_Chap04_Act240.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act240_Caption.json"
+  },
+  {
+    "video_id": 4250,
+    "video_path": "CS_Chap04_Act250.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act250_Caption.json"
+  },
+  {
+    "video_id": 4260,
+    "video_path": "CS_Chap04_Act260.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act260_Caption.json"
+  },
+  {
+    "video_id": 4270,
+    "video_path": "CS_Chap04_Act270.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act270_Caption.json"
+  },
+  {
+    "video_id": 4280,
+    "video_path": "CS_Chap04_Act280.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act280_Caption.json"
+  },
+  {
+    "video_id": 4290,
+    "video_path": "CS_Chap04_Act290.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act290_Caption.json"
+  },
+  {
+    "video_id": 4300,
+    "video_path": "CS_Chap04_Act300.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act300_Caption.json"
+  },
+  {
+    "video_id": 4311,
+    "video_path": "CS_Chap04_Act310.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act310_Caption.json"
+  },
+  {
+    "video_id": 4310,
+    "video_path": "CS_Chap04_Act3020.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act3020_Caption.json"
+  },
+  {
+    "video_id": 4320,
+    "video_path": "CS_Chap04_Act3010.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act3010_Caption.json"
+  },
+  {
+    "video_id": 4330,
+    "video_path": "CS_Chap04_Act320.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act320_Caption.json"
+  },
+  {
+    "video_id": 4340,
+    "video_path": "CS_Chap04_Act330.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act330_Caption.json"
+  },
+  {
+    "video_id": 4350,
+    "video_path": "CS_Chap04_Act340.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act340_Caption.json"
+  },
+  {
+    "video_id": 4360,
+    "video_path": "CS_Chap04_Act350.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act350_Caption.json"
+  },
+  {
+    "video_id": 4370,
+    "video_path": "CS_Chap04_Act360.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act360_Caption.json"
+  },
+  {
+    "video_id": 4380,
+    "video_path": "CS_Chap04_Act370.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act370_Caption.json"
+  },
+  {
+    "video_id": 4390,
+    "video_path": "CS_Chap04_Act380.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act380_Caption.json"
+  },
+  {
+    "video_id": 4400,
+    "video_path": "CS_Chap04_Act390.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act390_Caption.json"
+  },
+  {
+    "video_id": 4410,
+    "video_path": "CS_Chap04_Act400.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act400_Caption.json"
+  },
+  {
+    "video_id": 4420,
+    "video_path": "CS_Chap04_Act410.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act410_Caption.json"
+  },
+  {
+    "video_id": 4430,
+    "video_path": "CS_Chap04_Act420.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act420_Caption.json"
+  },
+  {
+    "video_id": 4440,
+    "video_path": "CS_Chap04_Act430.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act430_Caption.json"
+  },
+  {
+    "video_id": 4411,
+    "video_path": "CS_Chap04_Act3040.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 4450,
+    "video_path": "CS_Chap04_Act440.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act440_Caption.json"
+  },
+  {
+    "video_id": 4460,
+    "video_path": "CS_Chap04_Act450.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act450_Caption.json"
+  },
+  {
+    "video_id": 4470,
+    "video_path": "CS_Chap04_Act460.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act460_Caption.json"
+  },
+  {
+    "video_id": 4480,
+    "video_path": "CS_Chap04_Act470.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act470_Caption.json"
+  },
+  {
+    "video_id": 4490,
+    "video_path": "CS_Chap04_Act480.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act480_Caption.json"
+  },
+  {
+    "video_id": 4500,
+    "video_path": "CS_Chap04_Act490.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act490_Caption.json"
+  },
+  {
+    "video_id": 4510,
+    "video_path": "CS_Chap04_Act500.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act500_Caption.json"
+  },
+  {
+    "video_id": 4511,
+    "video_path": "CS_Chap04_Act3060.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 4520,
+    "video_path": "CS_Chap04_Act510.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act510_Caption.json"
+  },
+  {
+    "video_id": 4530,
+    "video_path": "CS_Chap04_Act520.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act520_Caption.json"
+  },
+  {
+    "video_id": 4540,
+    "video_path": "CS_Chap04_Act540.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act540_Caption.json"
+  },
+  {
+    "video_id": 4550,
+    "video_path": "CS_Chap04_Act560.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act560_Caption.json"
+  },
+  {
+    "video_id": 4560,
+    "video_path": "CS_Chap04_Act570.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act570_Caption.json"
+  },
+  {
+    "video_id": 4570,
+    "video_path": "CS_Chap04_Act580.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act580_Caption.json"
+  },
+  {
+    "video_id": 4580,
+    "video_path": "CS_Chap04_Act590.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act590_Caption.json"
+  },
+  {
+    "video_id": 4590,
+    "video_path": "CS_Chap04_Act3050.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act3050_Caption.json"
+  },
+  {
+    "video_id": 4591,
+    "video_path": "CS_Chap04_Act3051.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act3051_Caption.json"
+  },
+  {
+    "video_id": 4592,
+    "video_path": "CS_Chap04_Act3052.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act3052_Caption.json"
+  },
+  {
+    "video_id": 4593,
+    "video_path": "CS_Chap04_Act3053.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act3053_Caption.json"
+  },
+  {
+    "video_id": 4594,
+    "video_path": "CS_Chap04_Act3054.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act3054_Caption.json"
+  },
+  {
+    "video_id": 4595,
+    "video_path": "CS_Chap04_Act3055.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act3055_Caption.json"
+  },
+  {
+    "video_id": 4596,
+    "video_path": "CS_Chap04_Act3056.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act3056_Caption.json"
+  },
+  {
+    "video_id": 4597,
+    "video_path": "CS_Chap04_Act3057.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act3057_Caption.json"
+  },
+  {
+    "video_id": 3620,
+    "video_path": "CS_Chap03_Act620.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act620_Caption.json"
+  },
+  {
+    "video_id": 3640,
+    "video_path": "CS_Chap03_Act640.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act640_Caption.json"
+  },
+  {
+    "video_id": 3650,
+    "video_path": "CS_Chap03_Act650.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act650_Caption.json"
+  },
+  {
+    "video_id": 3660,
+    "video_path": "CS_Chap03_Act660.usm",
+    "is_player_involved": true,
+    "caption_path": ""
+  },
+  {
+    "video_id": 3670,
+    "video_path": "CS_Chap03_Act670.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 3680,
+    "video_path": "CS_Chap03_Act680.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act680_Caption.json"
+  },
+  {
+    "video_id": 3690,
+    "video_path": "CS_Chap03_Act3090.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap03_Act3090_Caption.json"
+  },
+  {
+    "video_id": 20000,
+    "video_path": "CS_SkinShow_1131001.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 4600,
+    "video_path": "CS_Chap04_Act501.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act501_Caption.json"
+  },
+  {
+    "video_id": 20001,
+    "video_path": "CS_Activity_Fate_CN.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 20002,
+    "video_path": "CS_Activity_Fate_TC.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 20003,
+    "video_path": "CS_Activity_Fate_EN.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 20004,
+    "video_path": "CS_Activity_Fate_KR.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 20005,
+    "video_path": "CS_Activity_Fate_JP.usm",
+    "caption_path": ""
+  },
+  {
+    "video_id": 4601,
+    "video_path": "CS_Chap04_Act600.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act600_Caption.json"
+  },
+  {
+    "video_id": 4610,
+    "video_path": "CS_Chap04_Act610.usm",
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act610_Caption.json"
+  },
+  {
+    "video_id": 4620,
+    "video_path": "CS_Chap04_Act620.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act620_Caption.json"
+  },
+  {
+    "video_id": 4630,
+    "video_path": "CS_Chap04_Act630.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act630_Caption.json"
+  },
+  {
+    "video_id": 4640,
+    "video_path": "CS_Chap04_Act640.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act640_Caption.json"
+  },
+  {
+    "video_id": 4650,
+    "video_path": "CS_Chap04_Act650.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act650_Caption.json"
+  },
+  {
+    "video_id": 4660,
+    "video_path": "CS_Chap04_Act660.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act660_Caption.json"
+  },
+  {
+    "video_id": 4670,
+    "video_path": "CS_Chap04_Act670.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act670_Caption.json"
+  },
+  {
+    "video_id": 4680,
+    "video_path": "CS_Chap04_Act680.usm",
+    "is_player_involved": true,
+    "caption_path": "Config/CutSceneCaption/CS_Chap04_Act680_Caption.json"
+  }
+]
