@@ -91,7 +91,11 @@ def get_keys(update_for: str):
 	keys = {}
 	with open(sub_root / 'VideoConfig.json') as f:
 		data = json.load(f)
+	with open(sub_root / 'VideoConfigLD.json') as f:
+		data.extend(json.load(f))
 	with open(sub_root / 'LoopCGConfig.json') as f:
+		data.extend(json.load(f))
+	with open(sub_root / 'LoopCGConfigLD.json') as f:
 		data.extend(json.load(f))
 	with open(sub_root / 'VideoEncryptionConfig.json') as f:
 		is_encryption_data = json.load(f)
@@ -110,7 +114,7 @@ def get_keys(update_for: str):
 		if i.VideoID in loaded_key:
 			continue
 		loaded_key.add(i.VideoID)
-		if is_encryption_data[str(i.VideoID)].Encryption is False:
+		if is_encryption_data.get(str(i.VideoID), VideoEncryptionConfigRow()).Encryption is False:
 			continue
 		version_key = None
 		name_stripped = 0
@@ -131,6 +135,8 @@ def get_keys(update_for: str):
 		for name in names:
 			if name in keys:
 				continue
+			if 'AvatarShowLoop' in name: # thanks for hiro
+				name_stripped = 0
 			key = _get_hsr_decrypt_key(name, version_key, name_stripped)
 			keys[name] = key
 
@@ -147,7 +153,7 @@ def get_keys(update_for: str):
 
 
 if __name__ == '__main__':
-	VERSION = "4.2"
+	VERSION = "4.3"
 	result, all_keys = get_keys(VERSION)
 	keys_path = Path(__file__).parent.parent.parent / 'PyCriUsm' / 'keys.json'
 	keys = {}
