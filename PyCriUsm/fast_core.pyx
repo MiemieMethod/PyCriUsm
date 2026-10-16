@@ -1,4 +1,4 @@
-from libc.string cimport memcpy
+from libc.string cimport memcpy, memset
 from cython cimport boundscheck, wraparound
 from cpython cimport PyMem_Malloc, PyMem_Free, PyObject
 from cpython cimport PyLong_FromLong
@@ -85,6 +85,7 @@ cdef class SimpleBuffer:
 	cdef readonly bint is_video
 	cdef readonly uint8_t chno
 	cdef readonly uint32_t index
+	cdef readonly uint32_t frame_time
 	cdef int64_t buffer_ref_count
 
 	def __cinit__(self):
@@ -140,12 +141,13 @@ cdef class FastUsmFile:
 		self._custom_buf = <char*>PyMem_Malloc(<size_t>DEFAULT_BUFFER_SIZE)
 		setvbuf(self._file_obj, self._custom_buf, _IOFBF, 8192)
 
-	cdef SimpleBuffer _get_chunk(self, int32_t offset, size_t size, bint is_video, uint8_t chno):
+	cdef SimpleBuffer _get_chunk(self, int32_t offset, size_t size, bint is_video, uint8_t chno, uint32_t frame_time):
 		cdef SimpleBuffer buffer = SimpleBuffer()
 		buffer.init(size)
 		with nogil:
 			buffer.is_video = is_video
 			buffer.chno = chno
+			buffer.frame_time = frame_time
 			buffer.index = self.chunk_index
 			self.chunk_index += 1
 			fseek(self._file_obj, offset, 1)
@@ -229,7 +231,7 @@ cdef class FastUsmFile:
 					continue
 				# printf("开始读取chunk\n")
 				with gil:
-					yield self._get_chunk(data_offset[0] + 8 - sizeof(header_array), chunk_size - data_offset[0] - padding_size, is_video, chno[0])
+					yield self._get_chunk(data_offset[0] + 8 - sizeof(header_array), chunk_size - data_offset[0] - padding_size, is_video, chno[0], _bswap_32(<uint32_t*>(header_array + 16)))
 				#printf('proccess end\n')
 			self.chunk_index = 0
 
@@ -247,6 +249,50 @@ cdef class FastUsmFile:
 		self._py_file_obj.close()
 
 
+@boundscheck(False)
+cdef void _init_video_mask(uint64_t key, uint8_t* m) noexcept nogil:
+	cdef uint32_t tmp_key1
+	cdef uint32_t tmp_key2
+	cdef uint8_t* key1
+	cdef uint8_t* key2
+	tmp_key1 = key & (<uint32_t>0xffffffff)
+	tmp_key2 = key >> 32
+	key1 = <uint8_t*>&tmp_key1
+	key2 = <uint8_t*>&tmp_key2
+	m[0x00] = key1[0]
+	m[0x01] = key1[1]
+	m[0x02] = key1[2]
+	m[0x03] = key1[3] - 0x34
+	m[0x04] = key2[0] + 0xF9
+	m[0x05] = key2[1] ^ 0x13
+	m[0x06] = key2[2] + 0x61
+	m[0x07] = m[0x00] ^ 0xFF
+	m[0x08] = m[0x02] + m[0x01]
+	m[0x09] = m[0x01] - m[0x07]
+	m[0x0A] = m[0x02] ^ 0xFF
+	m[0x0B] = m[0x01] ^ 0xFF
+	m[0x0C] = m[0x0B] + m[0x09]
+	m[0x0D] = m[0x08] - m[0x03]
+	m[0x0E] = m[0x0D] ^ 0xFF
+	m[0x0F] = m[0x0A] - m[0x0B]
+	m[0x10] = m[0x08] - m[0x0F]
+	m[0x11] = m[0x10] ^ m[0x07]
+	m[0x12] = m[0x0F] ^ 0xFF
+	m[0x13] = m[0x03] ^ 0x10
+	m[0x14] = m[0x04] - 0x32
+	m[0x15] = m[0x05] + 0xED
+	m[0x16] = m[0x06] ^ 0xF3
+	m[0x17] = m[0x13] - m[0x0F]
+	m[0x18] = m[0x15] + m[0x07]
+	m[0x19] = 0x21 - m[0x13]
+	m[0x1A] = m[0x14] ^ m[0x17]
+	m[0x1B] = m[0x16] + m[0x16]
+	m[0x1C] = m[0x17] + 0x44
+	m[0x1D] = m[0x03] + m[0x04]
+	m[0x1E] = m[0x05] - m[0x16]
+	m[0x1F] = m[0x1D] ^ m[0x13]
+
+
 cdef class UsmCrypter:
 	cdef uint8_t[0x20] _video_mask1
 	cdef uint8_t[0x20] _video_mask2
@@ -255,51 +301,12 @@ cdef class UsmCrypter:
 	@wraparound(False)
 	@boundscheck(False)
 	def __init__(self, uint64_t key):
-		cdef uint32_t tmp_key1
-		cdef uint32_t tmp_key2
-		cdef uint8_t[4] key1
-		cdef uint8_t[4] key2
 		cdef uint8_t[4] table2
 		cdef uint8_t i
 
 		with nogil:
 			table2 = [85, 82, 85, 67]
-			tmp_key1 = key & (<uint32_t>0xffffffff)
-			tmp_key2 = key >> 32
-			key1 = <uint8_t*>&tmp_key1
-			key2 = <uint8_t*>&tmp_key2
-			self._video_mask1[0x00] = key1[0]
-			self._video_mask1[0x01] = key1[1]
-			self._video_mask1[0x02] = key1[2]
-			self._video_mask1[0x03] = key1[3] - 0x34
-			self._video_mask1[0x04] = key2[0] + 0xF9
-			self._video_mask1[0x05] = key2[1] ^ 0x13
-			self._video_mask1[0x06] = key2[2] + 0x61
-			self._video_mask1[0x07] = self._video_mask1[0x00] ^ 0xFF
-			self._video_mask1[0x08] = self._video_mask1[0x02] + self._video_mask1[0x01]
-			self._video_mask1[0x09] = self._video_mask1[0x01] - self._video_mask1[0x07]
-			self._video_mask1[0x0A] = self._video_mask1[0x02] ^ 0xFF
-			self._video_mask1[0x0B] = self._video_mask1[0x01] ^ 0xFF
-			self._video_mask1[0x0C] = self._video_mask1[0x0B] + self._video_mask1[0x09]
-			self._video_mask1[0x0D] = self._video_mask1[0x08] - self._video_mask1[0x03]
-			self._video_mask1[0x0E] = self._video_mask1[0x0D] ^ 0xFF
-			self._video_mask1[0x0F] = self._video_mask1[0x0A] - self._video_mask1[0x0B]
-			self._video_mask1[0x10] = self._video_mask1[0x08] - self._video_mask1[0x0F]
-			self._video_mask1[0x11] = self._video_mask1[0x10] ^ self._video_mask1[0x07]
-			self._video_mask1[0x12] = self._video_mask1[0x0F] ^ 0xFF
-			self._video_mask1[0x13] = self._video_mask1[0x03] ^ 0x10
-			self._video_mask1[0x14] = self._video_mask1[0x04] - 0x32
-			self._video_mask1[0x15] = self._video_mask1[0x05] + 0xED
-			self._video_mask1[0x16] = self._video_mask1[0x06] ^ 0xF3
-			self._video_mask1[0x17] = self._video_mask1[0x13] - self._video_mask1[0x0F]
-			self._video_mask1[0x18] = self._video_mask1[0x15] + self._video_mask1[0x07]
-			self._video_mask1[0x19] = 0x21 - self._video_mask1[0x13]
-			self._video_mask1[0x1A] = self._video_mask1[0x14] ^ self._video_mask1[0x17]
-			self._video_mask1[0x1B] = self._video_mask1[0x16] + self._video_mask1[0x16]
-			self._video_mask1[0x1C] = self._video_mask1[0x17] + 0x44
-			self._video_mask1[0x1D] = self._video_mask1[0x03] + self._video_mask1[0x04]
-			self._video_mask1[0x1E] = self._video_mask1[0x05] - self._video_mask1[0x16]
-			self._video_mask1[0x1F] = self._video_mask1[0x1D] ^ self._video_mask1[0x13]
+			_init_video_mask(key, self._video_mask1)
 
 			for i in range(0x20):
 				self._video_mask2[i] = self._video_mask1[i] ^ 0xFF
@@ -341,10 +348,134 @@ cdef class UsmCrypter:
 
 @wraparound(False)
 @boundscheck(False)
-cdef uint8_t* init_default_audio_ciph(uint8_t* _ciphTable):
+def get_video_mask(uint64_t key):
+	cdef uint8_t[0x20] mask
+	_init_video_mask(key, mask)
+	return <bytes>mask[:0x20]
+
+
+@wraparound(False)
+@boundscheck(False)
+def peel_video_chunk(SimpleBuffer chunk_array):
+	"""
+	remove the key independent part of usm video encryption, return (data, kind)
+	kind 0: data is plain, 1: plain = data ^ video_mask1, 2: plain = data ^ ~video_mask1
+	"""
+	cdef Py_ssize_t size = chunk_array.size
+	cdef uint8_t* data = chunk_array.data
+	cdef bytearray py_out = bytearray(size)
+	cdef bytearray py_kind = bytearray(size)
+	cdef uint8_t* out = py_out
+	cdef uint8_t* kind = py_kind
+	cdef uint8_t[0x20] acc
+	cdef Py_ssize_t i
+	cdef Py_ssize_t row
+	if size == 0:
+		return py_out, py_kind
+	memcpy(out, data, size)
+	if size < 0x240:
+		return py_out, py_kind
+	with nogil:
+		# from 0x140, every byte is chained with the byte 0x20 ahead
+		memset(acc, 0, sizeof(acc))
+		for i in range(0x140, size):
+			acc[i & 0x1F] ^= data[i]
+			out[i] = acc[i & 0x1F]
+			kind[i] = 2 if ((i - 0x140) >> 5) & 1 == 0 else 0
+		# 0x40 - 0x140 is masked by the running xor of plain bytes from 0x140
+		memset(acc, 0, sizeof(acc))
+		for row in range(8):
+			for i in range(0x20):
+				acc[i] ^= out[0x140 + row * 0x20 + i]
+				out[0x40 + row * 0x20 + i] = data[0x40 + row * 0x20 + i] ^ acc[i]
+				if row & 2:
+					kind[0x40 + row * 0x20 + i] = 1
+				else:
+					out[0x40 + row * 0x20 + i] ^= 0xFF
+	return py_out, py_kind
+
+
+cdef uint8_t[13] _lanes_k012 = [0x00, 0x01, 0x02, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0F, 0x10, 0x11, 0x12]
+cdef uint8_t[12] _lanes_k34 = [0x03, 0x04, 0x0D, 0x0E, 0x13, 0x14, 0x17, 0x19, 0x1A, 0x1C, 0x1D, 0x1F]
+cdef uint8_t[7] _lanes_k56 = [0x05, 0x06, 0x15, 0x16, 0x18, 0x1B, 0x1E]
+
+
+@wraparound(False)
+@boundscheck(False)
+cdef double _score_lanes(double[:, ::1] votes, uint64_t key, uint8_t* lanes, int lane_num) noexcept nogil:
+	cdef uint8_t[0x20] mask
+	cdef double score = 0
+	cdef int i
+	_init_video_mask(key, mask)
+	for i in range(lane_num):
+		score += votes[lanes[i], mask[lanes[i]]]
+	return score
+
+
+cdef void _insert_top(double* scores, uint64_t* keys, int num, double score, uint64_t key) noexcept nogil:
+	cdef int j = num - 1
+	if score <= scores[j]:
+		return
+	while j > 0 and scores[j - 1] < score:
+		scores[j] = scores[j - 1]
+		keys[j] = keys[j - 1]
+		j -= 1
+	scores[j] = score
+	keys[j] = key
+
+
+@wraparound(False)
+@boundscheck(False)
+def solve_video_key(double[:, ::1] votes, int candidates=32):
+	"""
+	find the usm keys whose video_mask1 fit the votes (votes[lane][mask byte]) best
+	key bytes 0-2, 3-4 and 5-6 decide different lanes of the mask, so they are searched by stage
+	return [(key, score)] of the best candidates, the best first
+	"""
+	cdef uint64_t[32] keys_k012
+	cdef double[32] scores_k012
+	cdef uint64_t[8] keys_k34
+	cdef double[8] scores_k34
+	cdef uint64_t[8] keys_k56
+	cdef double[8] scores_k56
+	cdef uint64_t[32] result_keys
+	cdef double[32] result_scores
+	cdef uint64_t key
+	cdef uint64_t i
+	cdef int j
+	cdef int k
+	cdef int l
+	if votes.shape[0] != 0x20 or votes.shape[1] != 0x100:
+		raise ValueError('votes must be 32 * 256')
+	candidates = min(max(candidates, 1), 32)
+	with nogil:
+		for j in range(candidates):
+			scores_k012[j] = -1
+			result_scores[j] = -1
+		for key in range(0x1000000):
+			_insert_top(scores_k012, keys_k012, candidates, _score_lanes(votes, key, _lanes_k012, 13), key)
+		for k in range(candidates):
+			if scores_k012[k] < 0:
+				break
+			for j in range(8):
+				scores_k34[j] = -1
+				scores_k56[j] = -1
+			for i in range(0x10000):
+				_insert_top(scores_k34, keys_k34, 8, _score_lanes(votes, keys_k012[k] | (i << 24), _lanes_k34, 12), i << 24)
+				_insert_top(scores_k56, keys_k56, 8, _score_lanes(votes, keys_k012[k] | (i << 40), _lanes_k56, 7), i << 40)
+			for j in range(8):
+				for l in range(8):
+					if scores_k34[j] >= 0 and scores_k56[l] >= 0:
+						_insert_top(result_scores, result_keys, candidates, scores_k012[k] + scores_k34[j] + scores_k56[l], keys_k012[k] | keys_k34[j] | keys_k56[l])
+	return [(result_keys[j], result_scores[j]) for j in range(candidates) if result_scores[j] >= 0]
+
+
+@wraparound(False)
+@boundscheck(False)
+cdef void init_default_audio_ciph(uint8_t* _ciphTable):
 	cdef uint64_t i
 	cdef uint8_t v = 0
-	for i in range(0xff):
+	for i in range(1, 0xff):
 		v = v * 13 + 11
 		if v == 0 or v == 0xFF:
 			v = v * 13 + 11
@@ -356,17 +487,23 @@ cdef uint8_t[0x100] default_audio_ciph_table
 init_default_audio_ciph(default_audio_ciph_table)
 
 
+cdef inline bint _is_hca_tag(uint8_t* data, const char* tag) noexcept nogil:
+	# chunk names of hca header may be masked by 0x80
+	return (data[0] & 0x7F) == tag[0] and (data[1] & 0x7F) == tag[1] and (data[2] & 0x7F) == tag[2] and (data[3] & 0x7F) == tag[3]
+
+
 cdef class HcaCrypter:
 	cdef uint8_t[0x100] _ciph_table
+	cdef uint16_t _cipher_type
+	cdef uint16_t _block_size
 
 	@wraparound(False)
 	@boundscheck(False)
-	def __init__(self, uint32_t key1, uint32_t key2):
-		cdef uint8_t* _ciph_table
+	def __init__(self, uint64_t key):
 		cdef uint64_t i
 		cdef uint64_t j
 		cdef uint8_t tmp1
-		cdef uint8_t v
+		cdef uint8_t v = 0
 		cdef uint8_t[7] t1
 		cdef uint8_t[16] t2
 		cdef uint8_t[0x100] t3
@@ -374,14 +511,13 @@ cdef class HcaCrypter:
 		cdef uint8_t[0x10] t32
 		cdef uint32_t iTable = 1
 
-		_ciphTable = self._ciph_table
-		if key1 == 0:
-			key2 -= 1
-		key1 -= 1
+		self._cipher_type = 0
+		self._block_size = 0
+		if key:
+			key -= 1
 		for i in range(7):
-			t1[i] = key1
-			key1 = key1 >> 8 | key2 << 24
-			key2 >>= 8
+			t1[i] = key & 0xFF
+			key >>= 8
 
 		t2 = [t1[1], t1[1] ^ t1[6], t1[2] ^ t1[3],
 			t1[2], t1[2] ^ t1[1], t1[3] ^ t1[4],
@@ -394,58 +530,103 @@ cdef class HcaCrypter:
 		# Create Table
 		for i in range(0x10):
 			init56_create_table(t32, t2[i])
-			v = t31[i] << 4
-			for j in range(sizeof(t32)):
-				tmp1 = t32[j]
-				t3[i * 0x10 + j] = v | tmp1
+			for j in range(0x10):
+				t3[i * 0x10 + j] = (t31[i] << 4) | t32[j]
 
 		# CIPHテーブル
 		for i in range(0x100):
 			v = v + 0x11
 			tmp1 = t3[v]
-			iTable += 1
 			if tmp1 != 0 and tmp1 != 0xFF:
-				_ciphTable[iTable] = tmp1
-		_ciphTable[0] = 0
-		_ciphTable[0xFF] = 0xFF
+				self._ciph_table[iTable] = tmp1
+				iTable += 1
+		self._ciph_table[0] = 0
+		self._ciph_table[0xFF] = 0xFF
 
 	@wraparound(False)
 	@boundscheck(False)
-	def decrypt(self, uint8_t* data, uint64_t size, uint8_t type):
+	def decrypt(self, SimpleBuffer chunk_array):
+		"""
+		decrypt a usm audio chunk in place, which is either the hca header or some whole hca frames
+		"""
+		cdef uint8_t* data = chunk_array.data
+		cdef uint64_t size = chunk_array.size
+		cdef uint64_t i
+		cdef uint64_t pos
+		cdef uint64_t header_size
+		cdef uint64_t block_size
 		cdef uint8_t* _ciph_table
-		cdef uint16_t sum
-		if type == 0:
+		if size < 8:
 			return
-		elif type == 1:
+		if _is_hca_tag(data, b'HCA\0'):
+			header_size = data[6] << 8 | data[7]
+			if header_size > size or header_size < 14:
+				return
+			for i in range(8, header_size - 6):
+				if _is_hca_tag(data + i, b'comp') or _is_hca_tag(data + i, b'dec\0'):
+					self._block_size = data[i + 4] << 8 | data[i + 5]
+				elif _is_hca_tag(data + i, b'ciph'):
+					self._cipher_type = data[i + 4] << 8 | data[i + 5]
+					# the header we output is plain
+					data[i + 4] = 0
+					data[i + 5] = 0
+			self.write_check_sum(data, header_size)
+			return
+		if self._cipher_type == 1:
 			_ciph_table = default_audio_ciph_table
-		elif type == 65:
+		elif self._cipher_type == 56:
 			_ciph_table = self._ciph_table
 		else:
-			return -1
+			return
+		block_size = self._block_size if self._block_size else size
 		with nogil:
-			for i in range(size):
-				data[i] = _ciph_table[data[i]]
-		sum = self.check_sum(data, size - 2)
-		data[size - 1] = sum >> 8
-		data[size - 2] = sum & 0xff
-		return data[:size]
+			pos = 0
+			while pos + block_size <= size:
+				for i in range(pos, pos + block_size):
+					data[i] = _ciph_table[data[i]]
+				self.write_check_sum(data + pos, block_size)
+				pos += block_size
 
 	@wraparound(False)
 	@boundscheck(False)
-	cdef uint16_t check_sum(self, uint8_t* data, uint64_t size):
-		cdef uint64_t i 
-		cdef uint16_t sum
-		with nogil:
-			for i in range(size):
-				sum = sum << 8 ^ hca_check_sum_table[sum >> 8 ^ data[i]]
-		return sum
+	cdef void write_check_sum(self, uint8_t* data, uint64_t size) noexcept nogil:
+		cdef uint64_t i
+		cdef uint16_t sum = 0
+		for i in range(size - 2):
+			sum = (sum << 8) ^ hca_check_sum_table[(sum >> 8) ^ data[i]]
+		data[size - 2] = sum >> 8
+		data[size - 1] = sum & 0xff
+
 
 @wraparound(False)
 @boundscheck(False)
-cdef uint8_t* init56_create_table(uint8_t* table, uint8_t key):
-	cdef int32_t mul = (key & 1) << 3 | 5
-	cdef int32_t add = key & 0xE | 1
+cdef void init56_create_table(uint8_t* table, uint8_t key) noexcept nogil:
+	cdef uint8_t mul = (key & 1) << 3 | 5
+	cdef uint8_t add = key & 0xE | 1
+	cdef uint64_t i
 	key >>= 4
 	for i in range(0x10):
-		key = key * mul + add
+		key = (key * mul + add) & 0xF
 		table[i] = key
+
+
+cdef class AesCrypter:
+	"""
+	AES-128-CTR video encryption used by HSR since 4.4, iv = nonce(8) + frame time(4) + zero(4)
+	"""
+	cdef bytes _key
+	cdef bytes _nonce
+
+	def __init__(self, bytes key, uint64_t nonce):
+		self._key = key
+		self._nonce = nonce.to_bytes(8, 'big')
+
+	def decrypt_video(self, SimpleBuffer chunk_array):
+		from Crypto.Cipher import AES
+		cdef Py_ssize_t dataOffset = 0x40
+		if chunk_array.size <= dataOffset:
+			return
+		data = memoryview(chunk_array)[dataOffset:]
+		cipher = AES.new(self._key, AES.MODE_CTR, nonce=b'',
+						 initial_value=self._nonce + chunk_array.frame_time.to_bytes(4, 'big') + b'\0\0\0\0')
+		cipher.decrypt(data, output=data)

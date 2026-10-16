@@ -13,7 +13,7 @@ If you want your game support decryption, please do as below:
 2. Create a script named get_keys.py, which contains the function __get_keys__
 
 
-3. __get_keys__ function must return audio encryption mode and keys dict(video name: key). In audio encryption mode, 0 stand for no encryption, 1 for USM encryption and 2 for HCA encryption(not supported yet).
+3. __get_keys__ function must return audio encryption mode and keys dict(video name: key). In audio encryption mode, 0 stand for no encryption, 1 for USM encryption and 2 for HCA encryption with the same key as USM. A key can also be a list [USM or AES key, HCA key].
 
 
 3. You can add necessary files to the game folder.

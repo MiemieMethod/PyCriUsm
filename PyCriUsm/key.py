@@ -14,11 +14,11 @@ def _flat_key_map(keys):
 		i = None
 		for i in data.values():
 			break
-		if isinstance(i, int):
-			share_dict.update(data)
-		elif isinstance(i, dict):
+		if isinstance(i, dict):
 			for i in data.values():
 				core(i, share_dict)
+		elif isinstance(i, (int, list)):
+			share_dict.update(data)
 		else:
 			raise TypeError('wrong keymap format')
 		return share_dict
@@ -42,20 +42,26 @@ fast_lookup_keys = _flat_key_map(raw_keys)
 def get_crypt_args_from_config(key, mode):
 	hca_key = 0
 	audio_encryption = bool(mode)
-	if mode == 2:
-		if hasattr(key, '__len__'):
-			hca_key = key[1]
-			key = key[0]
-		else:
-			hca_key = key
+	if isinstance(key, list):
+		# [usm key or AES key in hex, hca key]
+		hca_key = key[1]
+		key = key[0]
+	elif mode == 2:
+		hca_key = key
 	return key, audio_encryption, hca_key
 
 
 def get_key(video_path):
 	key = 0
 	mode = 0
+	# videos with the same name but different keys are saved with their folders, like "Hollow/HollowToBattleBangboo"
+	parts = video_path.with_suffix('').parts
+	names = ['/'.join(parts[i:]) for i in range(len(parts))]
 	for mode, key_map in fast_lookup_keys.items():
-		key = key_map.get(video_path.stem, 0)
+		for name in names:
+			key = key_map.get(name, 0)
+			if key:
+				break
 		if key:
 			break
 	if key == 0:

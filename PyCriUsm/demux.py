@@ -6,17 +6,41 @@ from queue import SimpleQueue
 from struct import Struct
 from typing import Union
 
-from .fast_core import UsmCrypter, HcaCrypter, FastUsmFile
+from .fast_core import UsmCrypter, HcaCrypter, AesCrypter, FastUsmFile
 from .key import get_key
-from .util import reg_dict
+from .util import reg_dict, read_utf_table
 
 logger = getLogger('PyCriUsm.Demuxer')
 _usm_header_struct = Struct(r'>4sLxBHBxxBLL8x')
 crypt_cache = ({}, {})
 
 
-def get_crypter(key, is_hca=False):
+def get_crypter(key, is_hca=False, nonce=0):
+    if isinstance(key, str):
+        # AES key in hex, its iv relies on the nonce of each video
+        return AesCrypter(bytes.fromhex(key), nonce)
     return reg_dict(crypt_cache[is_hca], key, lambda: (UsmCrypter, HcaCrypter)[is_hca](key))
+
+
+def get_video_nonce(video_path):
+    """
+    read the AES nonce from VIDEO_HDRINFO, 0 if not exists
+    """
+    with FileIO(video_path, 'rb') as f:
+        while True:
+            header = f.read(32)
+            if len(header) < 32:
+                return 0
+            chunk_type, chunk_size, data_offset, padding_size, chno, data_type, frame_time, frame_rate = _usm_header_struct.unpack(header)
+            data = f.read(chunk_size - 24)
+            if data_type & 3 == 0:
+                return 0
+            data = data[data_offset - 0x18:chunk_size - 24 - padding_size]
+            if chunk_type != b'@SFV' or data[:4] != b'@UTF':
+                continue
+            name, rows = read_utf_table(data)
+            if name == 'VIDEO_HDRINFO':
+                return rows[0].get('nonce', 0) & 0xffffffffffffffff
 
 
 def cleanup_cryptor():
@@ -24,9 +48,25 @@ def cleanup_cryptor():
     crypt_cache[1].clear()
 
 
+def crack_key_args(video_path, min_confidence=0.9):
+    """
+    fallback for videos not in keys.json, crack the key from the video
+    """
+    from .crack import crack_key
+    key, confidence = crack_key(video_path)
+    if not key or confidence < min_confidence:
+        if key:
+            logger.warning(f'{video_path.name} cracked key is not reliable: {confidence:.3f}, skipped')
+        return 0, False, 0
+    # audio key is unknown, try the same key as video, unencrypted hca will be kept as it is
+    return key, True, 1
+
+
 def extract_usm(video_path, output, is_async: bool = False, **kwargs):
     video_path = Path(video_path)
     key_args = get_key(video_path)
+    if not key_args[0]:
+        key_args = crack_key_args(video_path)
     return demux(video_path, output, *key_args, is_async, **kwargs)
 
 
@@ -48,7 +88,7 @@ def demux(video_path, output: Union[str, Path, SimpleQueue], key=0, audio_encryp
     usm_decrypter = None
     hca_decrypter = None
     if key:
-        usm_decrypter = get_crypter(key, bool(hca_encrypt))
+        usm_decrypter = get_crypter(key, nonce=get_video_nonce(video_path) if isinstance(key, str) else 0)
         if hca_encrypt and hca_encrypt != 0 and hca_encrypt != 1:
             hca_decrypter = get_crypter(hca_encrypt, True)
         elif hca_encrypt == 1:
@@ -75,7 +115,10 @@ def demux(video_path, output: Union[str, Path, SimpleQueue], key=0, audio_encryp
     def write_file_from_cache(cache, suffix):
         ret = {}
         for inno, buffer in cache.items():
-            file_name = output / f'{video_path.stem}_{inno}{suffix}'
+            file_suffix = suffix
+            if bytes(i & 0x7f for i in buffer.getbuffer()[:4]) == b'HCA\0':
+                file_suffix = '.hca'
+            file_name = output / f'{video_path.stem}_{inno}{file_suffix}'
             ret[inno] = file_name
             with FileIO(file_name, 'wb') as f:
                 f.write(buffer.getbuffer())

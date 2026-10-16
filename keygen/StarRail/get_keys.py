@@ -1,5 +1,4 @@
-from math import floor
-from os import write
+from hashlib import pbkdf2_hmac
 
 from dataclasses_json import dataclass_json, LetterCase
 from dataclasses import dataclass
@@ -20,6 +19,12 @@ class VideoConfigRow:
 class VideoEncryptionConfigRow:
 	VideoID: int = 0
 	Encryption: bool = False
+	EncryptionMethod: str = 'ADX'
+
+
+# obfuscated field names of the extra key seeds in GetVideoVersionKeyScRsp since 4.4, they may change every version
+AUDIO_KEY_FIELD = 'IBDIMHPOPOJ'
+AES_KEY_FIELD = 'BOGECOHIINH'
 
 
 def _get_hsr_decrypt_key_0_7(video_name: str, version_key: int):
@@ -29,9 +34,7 @@ def _get_hsr_decrypt_key_0_7(video_name: str, version_key: int):
 		name_hash = (name_hash * 11 + i) & 0xffffffffffffffff
 	return ((version_key + name_hash) & 0xffffffffffffffff) % 72043514036987937
 
-def _get_hsr_decrypt_key_2_2(video_name: str, version_key: int, name_stripped: int):
-	game_version = floor(version_key / 10000000000000000)
-	version_key = version_key % 10000000000000000
+def _get_hsr_name_hash_2_2(video_name: str, game_version: int, name_stripped: int):
 	video_name = video_name[name_stripped:]
 	rot = game_version % len(video_name)
 	video_name = video_name[rot:] + video_name[:rot]
@@ -39,6 +42,11 @@ def _get_hsr_decrypt_key_2_2(video_name: str, version_key: int, name_stripped: i
 	name_hash = 0
 	for i in video_name:
 		name_hash = (name_hash * 7 + i) & 0xffffffffffffffff
+	return name_hash
+
+def _get_hsr_decrypt_key_2_2(video_name: str, version_key: int, name_stripped: int):
+	game_version, version_key = divmod(version_key, 10000000000000000)
+	name_hash = _get_hsr_name_hash_2_2(video_name, game_version, name_stripped)
 	return ((version_key + name_hash) & 0xffffffffffffffff) % 72043514036987937
 
 def _get_hsr_decrypt_key(video_name: str, version_key: int, name_stripped: int):
@@ -46,6 +54,17 @@ def _get_hsr_decrypt_key(video_name: str, version_key: int, name_stripped: int):
 		return _get_hsr_decrypt_key_0_7(video_name, version_key)
 	else:
 		return _get_hsr_decrypt_key_2_2(video_name, version_key, name_stripped)
+
+def _get_hsr_hca_key_4_4(video_name: str, version_key: int, audio_key: int):
+	game_version = version_key // 10000000000000000
+	name_hash = _get_hsr_name_hash_2_2(video_name, game_version, 0)
+	return ((name_hash + audio_key - game_version * 10000000000000000) & 0xffffffffffffffff) % 72043514036987937
+
+def _get_hsr_aes_key_4_4(video_name: str, version_key: int, aes_key: int):
+	game_version, version_key = divmod(version_key, 10000000000000000)
+	password = f'VideoAES_Seed_7svc05j3vc|{game_version:02d}|{version_key:016d}|{aes_key:020d}'
+	salt = 'VideoAES_Salt_yzt89k1huq|' + video_name
+	return pbkdf2_hmac('sha1', password.encode(), salt.encode(), 10000, 16).hex()
 
 def get_keys(update_for: str):
 	root = Path(__file__).parent
@@ -66,27 +85,14 @@ def get_keys(update_for: str):
 	with open(sub_root / 'GetVideoVersionKeyScRsp.json') as f:
 		data = json.load(f)
 	tmp_keys = {}
-	which_is_video = None
-	which_is_cg = None
-	for group_key in data:
+	which_is_video = 'video_key_info_list'
+	which_is_cg = 'activity_video_key_info_list'
+	for group_key in (which_is_video, which_is_cg):
 		tmp_keys[group_key] = {}
-		group = data[group_key]
-		if isinstance(group, list):
-			for item in group:
-				try:
-					k1, k2 = map(int, item.values())
-				except Exception:
-					continue
-				if k1 > 10_000:
-					k3 = k1
-					k1 = k2
-					k2 = k3
-				if k1 not in tmp_keys[group_key]:
-					tmp_keys[group_key][k1] = k2
-				if k1 == 1:
-					which_is_video = group_key
-				if k1 == 1464:
-					which_is_cg = group_key
+		for item in data.get(group_key, ()):
+			if item['id'] not in tmp_keys[group_key]:
+				tmp_keys[group_key][item['id']] = (int(item['video_key']), int(item.get(AUDIO_KEY_FIELD, 0)),
+												   int(item.get(AES_KEY_FIELD, 0)))
 
 	keys = {}
 	with open(sub_root / 'VideoConfig.json') as f:
@@ -114,7 +120,8 @@ def get_keys(update_for: str):
 		if i.VideoID in loaded_key:
 			continue
 		loaded_key.add(i.VideoID)
-		if is_encryption_data.get(str(i.VideoID), VideoEncryptionConfigRow()).Encryption is False:
+		encryption = is_encryption_data.get(str(i.VideoID), VideoEncryptionConfigRow())
+		if encryption.Encryption is False:
 			continue
 		version_key = None
 		name_stripped = 0
@@ -127,6 +134,10 @@ def get_keys(update_for: str):
 		if version_key is None:
 			Warning(f'Could not find {i.VideoPath} key')
 			continue
+		version_key, audio_key, aes_key = version_key
+		if encryption.EncryptionMethod == 'AES_HCA' and not aes_key:
+			print(f'Could not find {i.VideoPath} AES key seed, skip it')
+			continue
 		names = i.VideoPath.removesuffix('.usm')
 		if i.IsPlayerInvolved:
 			names = (names + '_f', names + '_m')
@@ -135,9 +146,14 @@ def get_keys(update_for: str):
 		for name in names:
 			if name in keys:
 				continue
-			if 'AvatarShowLoop' in name: # thanks for hiro
+			if 'AvatarShowLoop' in name: # thanks to hiro
 				name_stripped = 0
-			key = _get_hsr_decrypt_key(name, version_key, name_stripped)
+			if encryption.EncryptionMethod == 'AES_HCA': # thanks to hiro
+				# [AES video key, HCA audio key]
+				key = [_get_hsr_aes_key_4_4(name, version_key, aes_key),
+					   _get_hsr_hca_key_4_4(name, version_key, audio_key)]
+			else:
+				key = _get_hsr_decrypt_key(name, version_key, name_stripped)
 			keys[name] = key
 
 	for name in keys:
@@ -153,10 +169,11 @@ def get_keys(update_for: str):
 
 
 if __name__ == '__main__':
-	VERSION = "4.3"
+	VERSION = "4.6"
 	result, all_keys = get_keys(VERSION)
 	keys_path = Path(__file__).parent.parent.parent / 'PyCriUsm' / 'keys.json'
-	keys = {}
+	with open(keys_path, 'r', encoding='utf-8') as f:
+		keys = json.load(f)
 	keys["StarRail"] = {'Encrytion': result, 'KeyMap': all_keys}
 	with open(keys_path, 'w', encoding='utf-8') as f:
 		json.dump(keys, f, ensure_ascii=False, indent=4)
